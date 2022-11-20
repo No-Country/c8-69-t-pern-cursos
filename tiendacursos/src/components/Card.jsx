@@ -2,10 +2,9 @@ import React from 'react'
 import db from '../db/db'
 
 const Card = () => {
-
   return (
     <>
-      {db.map((course) => <div className="col-md-3 mt-4">
+      {db.map((course) => <div key={course.id} className="col-md-3 mt-4">
         <div className="card">
           <img
             src={course.img_couse}
