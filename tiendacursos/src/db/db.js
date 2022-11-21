@@ -3,6 +3,7 @@ const cursosDB = [{
   title: 'Angular Avanzado',
   description: 'Componentes, directivas, servicios, mapas, gráficas, JWT, autenticación, despliegues, mongo, Git, GitHub y mucho más',
   level: ['trainner', 'medium', 'Andanced'],
+  price: 1152.00,
   teacher: {
     id: 1,
     name: 'Fernando Herrera'
@@ -27,6 +28,7 @@ const cursosDB = [{
   title: 'Curso HTML y CSS curso profecional',
   description: 'Aprende HTML y CSS desde cero, sin conocimientos previos. Conoce todo sobre etiquetas HTML, semántica, CSS, como dar estilos a los elementos de tu sitio web, medidas EM/REM, modelo de caja y mucho más. Aprenderás todo lo que necesitas para empezar en el desarrollo web online y a construir sitios para internet de manera eficiente.',
   level: ['trainner', 'medium', 'Andanced'],
+  price: 1492.00,
   teacher: {
     id: 1,
     name: 'Robert'
@@ -51,6 +53,7 @@ const cursosDB = [{
   title: 'JavaScript Basico',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tempore provident, expedita assumenda deleniti illum et porro minus architecto! Explicabo ipsam quibusdam perspiciatis voluptas. Possimus ea consequatur amet maxime voluptatum.',
   level: ['trainner', 'medium', 'Andanced'],
+  price: 14820.00,
   teacher: {
     id: 1,
     name: 'Bernard'
@@ -75,6 +78,7 @@ const cursosDB = [{
   title: 'Curso Basico Microsorft .NET',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tempore provident, expedita assumenda deleniti illum et porro minus architecto! Explicabo ipsam quibusdam perspiciatis voluptas. Possimus ea consequatur amet maxime voluptatum.',
   level: ['trainner', 'medium', 'Andanced'],
+  price: 14852.00,
   teacher: {
     id: 1,
     name: 'Robert'
@@ -99,6 +103,7 @@ const cursosDB = [{
   title: 'Curso Profecional Node JS',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tempore provident, expedita assumenda deleniti illum et porro minus architecto! Explicabo ipsam quibusdam perspiciatis voluptas. Possimus ea consequatur amet maxime voluptatum.',
   level: ['trainner', 'medium', 'Andanced'],
+  price: 14362.00,
   teacher: {
     id: 1,
     name: 'Robert'
@@ -123,6 +128,7 @@ const cursosDB = [{
   title: 'PHP para Backend',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tempore provident, expedita assumenda deleniti illum et porro minus architecto! Explicabo ipsam quibusdam perspiciatis voluptas. Possimus ea consequatur amet maxime voluptatum.',
   level: ['trainner', 'medium', 'Andanced'],
+  price: 10362.00,
   teacher: {
     id: 1,
     name: 'Robert'
@@ -147,6 +153,7 @@ const cursosDB = [{
   title: 'Curso Basico Python',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tempore provident, expedita assumenda deleniti illum et porro minus architecto! Explicabo ipsam quibusdam perspiciatis voluptas. Possimus ea consequatur amet maxime voluptatum.',
   level: ['trainner', 'medium', 'Andanced'],
+  price: 15200.00,
   teacher: {
     id: 1,
     name: 'Robert'
@@ -171,6 +178,7 @@ const cursosDB = [{
   title: 'Desarrollo de aplicaciones nativas para Android',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tempore provident, expedita assumenda deleniti illum et porro minus architecto! Explicabo ipsam quibusdam perspiciatis voluptas. Possimus ea consequatur amet maxime voluptatum.',
   level: ['trainner', 'medium', 'Andanced'],
+  price: 14200.00,
   teacher: {
     id: 1,
     name: 'Robert'
@@ -195,6 +203,7 @@ const cursosDB = [{
   title: 'Curso Blockchain y Criptomonedas',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tempore provident, expedita assumenda deleniti illum et porro minus architecto! Explicabo ipsam quibusdam perspiciatis voluptas. Possimus ea consequatur amet maxime voluptatum.',
   level: ['trainner', 'medium', 'Andanced'],
+  price: 13200.00,
   teacher: {
     id: 1,
     name: 'Robert'
@@ -219,6 +228,7 @@ const cursosDB = [{
   title: 'Curso Boostrap 4',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tempore provident, expedita assumenda deleniti illum et porro minus architecto! Explicabo ipsam quibusdam perspiciatis voluptas. Possimus ea consequatur amet maxime voluptatum.',
   level: ['trainner', 'medium', 'Andanced'],
+  price: 17200.00,
   teacher: {
     id: 1,
     name: 'Robert'
@@ -243,6 +253,7 @@ const cursosDB = [{
   title: 'Curso Data Science',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tempore provident, expedita assumenda deleniti illum et porro minus architecto! Explicabo ipsam quibusdam perspiciatis voluptas. Possimus ea consequatur amet maxime voluptatum.',
   level: ['trainner', 'medium', 'Andanced'],
+  price: 14500.00,
   teacher: {
     id: 1,
     name: 'Robert'
@@ -267,6 +278,7 @@ const cursosDB = [{
   title: 'Curso basico de Exel',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tempore provident, expedita assumenda deleniti illum et porro minus architecto! Explicabo ipsam quibusdam perspiciatis voluptas. Possimus ea consequatur amet maxime voluptatum.',
   level: ['trainner', 'medium', 'Andanced'],
+  price: 11000.00,
   teacher: {
     id: 1,
     name: 'Robert'
@@ -291,6 +303,7 @@ const cursosDB = [{
   title: 'Java desde cero',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tempore provident, expedita assumenda deleniti illum et porro minus architecto! Explicabo ipsam quibusdam perspiciatis voluptas. Possimus ea consequatur amet maxime voluptatum.',
   level: ['trainner', 'medium', 'Andanced'],
+  price: 9000.00,
   teacher: {
     id: 1,
     name: 'Robert'
@@ -315,6 +328,7 @@ const cursosDB = [{
   title: 'Curso Scrum desde cero',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tempore provident, expedita assumenda deleniti illum et porro minus architecto! Explicabo ipsam quibusdam perspiciatis voluptas. Possimus ea consequatur amet maxime voluptatum.',
   level: ['trainner', 'medium', 'Andanced'],
+  price: 8900.00,
   teacher: {
     id: 1,
     name: 'Robert'
@@ -339,6 +353,7 @@ const cursosDB = [{
   title: 'Curso software tester - QA',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tempore provident, expedita assumenda deleniti illum et porro minus architecto! Explicabo ipsam quibusdam perspiciatis voluptas. Possimus ea consequatur amet maxime voluptatum.',
   level: ['trainner', 'medium', 'Andanced'],
+  price: 7800.00,
   teacher: {
     id: 1,
     name: 'Robert'
@@ -363,6 +378,7 @@ const cursosDB = [{
   title: 'UX para principiantes',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tempore provident, expedita assumenda deleniti illum et porro minus architecto!',
   level: ['trainner', 'medium', 'Andanced'],
+  price: 12400.00,
   teacher: {
     id: 1,
     name: 'Robert'
@@ -387,6 +403,7 @@ const cursosDB = [{
   title: 'Curso  C++  profecional',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tempore provident, expedita assumenda deleniti illum et porro minus architecto!',
   level: ['trainner', 'medium', 'Andanced'],
+  price: 17800.00,
   teacher: {
     id: 1,
     name: 'Robert'
@@ -411,6 +428,7 @@ const cursosDB = [{
   title: 'Curso Cobol',
   description: 'Explicabo ipsam quibusdam perspiciatis voluptas. Possimus ea consequatur amet maxime voluptatum.',
   level: ['trainner', 'medium', 'Andanced'],
+  price: 9600.00,
   teacher: {
     id: 1,
     name: 'Robert'
@@ -435,6 +453,7 @@ const cursosDB = [{
   title: 'ReactJS Bases',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tempore provident, expedita assumenda deleniti illum et porro minus architecto!',
   level: ['trainner', 'medium', 'Andanced'],
+  price: 1100.00,
   teacher: {
     id: 1,
     name: 'Robert'
@@ -451,14 +470,15 @@ const cursosDB = [{
   vide_url: [{
     id: 2,
     title: 'JavaScript 2',
-    url: 'https://firebasestorage.googleapis.com/v0/b/bluebird-2c2a8.appspot.com/o/react.jpg?alt=media&token=a96a9a4a-2867-4a2e-8382-eba8fe1d01ac',
+    url: 'https://www.cursos.com/video/javascript2.mp4',
   }],
-  img_couse: 'https://cursos.com/img/javascript.png'
+  img_couse: 'https://firebasestorage.googleapis.com/v0/b/bluebird-2c2a8.appspot.com/o/react.jpg?alt=media&token=a96a9a4a-2867-4a2e-8382-eba8fe1d01ac'
 }, {
   id: 20,
   title: 'Ruby desde cero',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tempore provident, expedita assumenda deleniti illum et porro minus architecto! Explicabo ipsam quibusdam perspiciatis voluptas. Possimus ea consequatur amet maxime voluptatum.',
   level: ['trainner', 'medium', 'Andanced'],
+  price: 1554.00,
   teacher: {
     id: 1,
     name: 'Robert'

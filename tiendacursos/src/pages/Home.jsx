@@ -10,10 +10,10 @@ const Home = () => {
 
 
   return (
-    <div className='container-fluid'>
+    <div className='container-xl '>
       <NavBar />
       <Header />
-      <main >
+      <main class="row">
         <Card />
       </main>
       <Footer />

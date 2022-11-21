@@ -18,7 +18,7 @@ const Card = () => {
             <p className="card-text"></p>
             <p>{course.teacher.name}</p>
             <p>
-              ★★★★★ <span>$15000</span>
+              ★★★★★ <span><b>${course.price}.00</b></span>
             </p>
             <a href="#" className="btn btn-primary">
               Agregar
