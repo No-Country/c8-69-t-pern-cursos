@@ -1,0 +1,63 @@
+/* html,
+body {
+  
+} */
+.estructura-body-login{
+  background-image: url("https://img.blogs.es/anexom/wp-content/uploads/2018/01/curso-online.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 10%;
+  width: 100%;
+  font-family: "Numans", sans-serif;
+}
+.titulo{
+    font-size: 22px;
+}
+.estructura-login {
+  height: 100%;
+  align-content: center;
+}
+.contenido-login {
+  position: relative;
+  margin-top: -35px;
+  transform: translate(0, 40%);
+  width: 450px;
+  background-color: rgb(255, 255, 255) !important;
+}
+.contenido-recuerdame{
+    margin: 5px;
+}
+.text-recuerdame strong{
+    position: relative;
+    margin: 12px;
+}
+.input-group-prepend span {
+  width: 50px;
+  background-color: #89e7f3;
+  color: black;
+  border: 0 !important;
+}
+.ingresar button{
+    width: 140px;
+}
+.olvide-password{
+    margin: auto;
+}
+.contenido-registrarme {
+  position: relative;
+  margin-top: 10px;
+  transform: translate(0, 40%);
+  width: 450px;
+  background-color: rgb(255, 255, 255) !important;
+}
+#registrame{
+  border-radius: 150px;
+    margin-top: 80px;
+}
+/* #registrame h1{
+    text-align: center;
+} */
+#registrarme button{
+  margin: auto;
+}
+
