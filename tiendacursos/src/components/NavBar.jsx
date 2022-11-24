@@ -29,13 +29,13 @@ const NavBar = () => {
             </a>
           </li>
           <li>
-            <a href="#">Cursos</a>
+            <Link to='/courses'>Cursos</Link>
           </li>
           <li>
-            <a href="#">Quienes somos</a>
+            <Link to='/about'>Quienes somos</Link>
           </li>
           <li>
-            <a href="#">Contacto</a>
+            <Link to='/contact'>Contacto</Link>
           </li>
         </ul>
 
