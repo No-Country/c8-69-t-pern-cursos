@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import db from '../db/db'
 
 const Card = () => {
@@ -20,9 +21,9 @@ const Card = () => {
             <p>
               ★★★★★ <span><b>${course.price}.00</b></span>
             </p>
-            <a href="#" className="btn btn-primary">
-              Agregar
-            </a>
+            <Link to='/course-detail' className="btn btn-primary">
+              Detalles
+            </Link>
           </div>
         </div>
       </div>)}

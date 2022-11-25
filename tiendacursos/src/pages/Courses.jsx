@@ -1,11 +1,10 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import CourseList from '../components/CourseList'
 
 const Courses = () => {
   return (
-    <div>
-      <h1>Courses</h1>
-      <Link to='/'>Return Home</Link>
+    <div className='container'>
+      <CourseList />
     </div>
   )
 }
