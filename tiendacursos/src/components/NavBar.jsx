@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
   return (
     <div>
-      <div id="menu">
+      <div id="menu" >
         <a className="navbar-brand" href="#">
           <div className="input-group mb-3">
             <img src="/imagenes/logo1.png" alt="" />
