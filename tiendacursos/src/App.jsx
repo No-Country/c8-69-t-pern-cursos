@@ -9,6 +9,7 @@ import Courses from './pages/Courses'
 import Home from './pages/Home'
 import Login from './pages/Login'
 import CourseDetail from './pages/CourseDetail'
+import Error404 from './pages/Error404'
 
 
 function App() {
@@ -24,9 +25,9 @@ function App() {
           <Route path='/contact' element={<Contact />} />
           <Route path='/courses' element={<Courses />} />
           <Route path='/course-detail' element={<CourseDetail />} />
+          <Route path='*' element={<Error404 />} />
         </Routes>
         <Footer />
-
       </HashRouter>
     </div>
   )
