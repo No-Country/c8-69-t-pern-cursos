@@ -10,16 +10,21 @@ import Home from './pages/Home'
 import Login from './pages/Login'
 import CourseDetail from './pages/CourseDetail'
 import Error404 from './pages/Error404'
+import { useState } from 'react'
 
 
 function App() {
+  const [show, setShow] = useState(true)
+
 
   return (
     <div className="App">
       <HashRouter>
-        <NavBar />
+        {show &&
+          <NavBar />
+        }
         <Routes>
-          <Route path='/login' element={<Login />} />
+          <Route path='/login' element={<Login setShow={setShow} />} />
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
@@ -27,7 +32,9 @@ function App() {
           <Route path='/course/:id' element={<CourseDetail />} />
           <Route path='*' element={<Error404 />} />
         </Routes>
-        <Footer />
+        {show &&
+          <Footer />
+        }
       </HashRouter>
     </div>
   )

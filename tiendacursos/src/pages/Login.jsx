@@ -4,7 +4,8 @@ import { faKey } from "@fortawesome/free-solid-svg-icons";
 import './styles/login.css'
 import { Link } from "react-router-dom";
 
-const Login = () => {
+const Login = ({ setShow }) => {
+  setShow(false)
   return (
     <div className="estructura-body-login">
       <div className="container estructura-login">
