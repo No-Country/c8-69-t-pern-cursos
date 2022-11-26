@@ -1,6 +1,5 @@
 import { Route, HashRouter, Routes } from 'react-router-dom'
 import './App.css'
-import CourseList from './components/CourseList'
 import Footer from './components/Footer'
 import NavBar from './components/NavBar'
 import About from './pages/About'
