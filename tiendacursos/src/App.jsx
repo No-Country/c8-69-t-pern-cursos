@@ -24,7 +24,7 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/courses' element={<Courses />} />
-          <Route path='/course-detail' element={<CourseDetail />} />
+          <Route path='/course/:id' element={<CourseDetail />} />
           <Route path='*' element={<Error404 />} />
         </Routes>
         <Footer />

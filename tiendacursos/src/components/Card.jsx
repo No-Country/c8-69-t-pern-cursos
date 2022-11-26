@@ -1,12 +1,19 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import db from '../db/db'
 
 const Card = () => {
+
+  const navigate = useNavigate()
+
+  const handleNavigation = (id) => {
+    navigate(`/course/${id}`)
+  }
   return (
     <>
       {db.map((course) => <div key={course.id} className="col-md-3 mt-4">
-        <div className="card">
+
+        <div onClick={() => handleNavigation(course.id)} className="card">
           <img
             src={course.img_couse}
             className="card-img-top"
@@ -21,9 +28,9 @@ const Card = () => {
             <p>
               ★★★★★ <span><b>${course.price}.00</b></span>
             </p>
-            <Link to='/course-detail' className="btn btn-primary">
+            <button onClick={() => handleNavigation(course.id)} className="btn btn-primary">
               Detalles
-            </Link>
+            </button>
           </div>
         </div>
       </div>)}
