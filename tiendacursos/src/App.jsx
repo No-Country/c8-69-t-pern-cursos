@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <HashRouter>
-        <NavBar />
+        {/* <NavBar /> */}
         <Routes>
           <Route path='/login' element={<Login />} />
           <Route path='/' element={<Home />} />
