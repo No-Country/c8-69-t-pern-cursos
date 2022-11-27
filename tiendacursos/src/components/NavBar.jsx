@@ -7,20 +7,12 @@ import './styles/navbar.css'
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
+
   return (
     <div>
       <div id="menu" >
         <a className="navbar-brand" href="#">
-          <div className="input-group mb-3">
-            <img src="/imagenes/logo1.png" alt="" />
-            <input
-              className="form-control me-2"
-              type="text"
-              name="buscar"
-              placeholder="Desea buscar algo"
-              id="buscar"
-            />
-          </div>
+          <img src="/imagenes/logo1.png" alt="" />
         </a>
         <ul className="navbar">
           <li>
@@ -51,7 +43,7 @@ const NavBar = () => {
           <button type="button" className="btn btn-outline-success ">
             Registarse
           </button>
-          <div className="faBars-icon" id="menu-icon">
+          <div className="faBars-icon navbar-toggler" id="menu-icon">
             <FontAwesomeIcon icon={faBars} />
           </div>
         </div>

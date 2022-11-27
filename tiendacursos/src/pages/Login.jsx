@@ -3,10 +3,21 @@ import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { faKey } from "@fortawesome/free-solid-svg-icons";
 import './styles/login.css'
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
-const Login = ({ setShow }) => {
-  setShow(false)
+const Login = ({ setShow, show }) => {
+
+  useEffect(() => {
+    if (show === true) {
+      setShow(false)
+    }
+  }, [show]);
+  const showNav = () => {
+    setShow(true)
+  }
+
   return (
+
     <div className="estructura-body-login">
       <div className="container estructura-login">
         <div className="d-flex">
@@ -52,7 +63,7 @@ const Login = ({ setShow }) => {
                 </div>
                 <div className="form-is-grouped float-end ingresar">
                   <Link to='/'>
-                    <button className="btn btn-primary mr-1">
+                    <button onClick={showNav} className="btn btn-primary mr-1">
                       Iniciar Sesion
                     </button>
                   </Link>
@@ -61,7 +72,7 @@ const Login = ({ setShow }) => {
             </div>
             <div className="card-footer mb-2">
               <a
-                href="/vistas/recuperarpasword/index.html"
+                href="#"
                 className="olvide-password"
                 id="btn-abrir-popup">
                 ¿Olvidaste tu contraseña?

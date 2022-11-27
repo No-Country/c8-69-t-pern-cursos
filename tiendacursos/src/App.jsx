@@ -1,6 +1,5 @@
 import { Route, HashRouter, Routes } from 'react-router-dom'
 import './App.css'
-import CourseList from './components/CourseList'
 import Footer from './components/Footer'
 import NavBar from './components/NavBar'
 import About from './pages/About'
@@ -10,11 +9,18 @@ import Home from './pages/Home'
 import Login from './pages/Login'
 import CourseDetail from './pages/CourseDetail'
 import Error404 from './pages/Error404'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { faTruckMedical } from '@fortawesome/free-solid-svg-icons'
 
 
 function App() {
-  const [show, setShow] = useState(true)
+  const [show, setShow] = useState()
+
+  useEffect(() => {
+    if (show === false || show === undefined) {
+      setShow(true)
+    }
+  }, [])
 
 
   return (
@@ -24,7 +30,7 @@ function App() {
           <NavBar />
         }
         <Routes>
-          <Route path='/login' element={<Login setShow={setShow} />} />
+          <Route path='/login' element={<Login setShow={setShow} show={show} />} />
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
