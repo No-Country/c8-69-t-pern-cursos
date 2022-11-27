@@ -29,6 +29,7 @@ function App() {
         {show &&
           <NavBar />
         }
+        {/* <NavBar /> */}
         <Routes>
           <Route path='/login' element={<Login setShow={setShow} show={show} />} />
           <Route path='/' element={<Home />} />
