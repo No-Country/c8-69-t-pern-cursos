@@ -19,7 +19,7 @@ const initModels = () => {
     //? Una categoria tiene muhcos cursos 
     Categories.hasMany(Courses)
 
-    //*Videso - Cursos
+    //*Videos - Cursos
     //? Un Video pertenece a un curso
     Videos.belongsTo(Courses)
     //? un curso tiene muchos videos
