@@ -17,15 +17,16 @@ router.route('/')
     )
 
 router.route('/:course_id')
-    .get(coursesServices.get getRecipeById)
+    .get(coursesServices.getCoursesByCategory)
     .patch(
         passport.authenticate('jwt', {session: false}),
-        recipeServices.patchRecipe
+        coursesServices.patchCourse
     )
     .delete(
         passport.authenticate('jwt', {session: false}),
-        recipeServices.deleteRecipe
+        coursesServices.deleteCourse
     )
 
+    module.exports = router;
+    
 
-module.exports = router

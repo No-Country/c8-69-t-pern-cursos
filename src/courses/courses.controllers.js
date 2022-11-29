@@ -96,7 +96,7 @@ const deleteCourse = async (id) => {
     return data
 }
 //*Filtrar cursos por usuario
-/* const getMyCourses = async(userId) => {
+const getMyCourses = async(userId) => {
     const userCourses = await UsersCourses.findAll({
         attributes: ['coursesId'],
         where: {
@@ -115,7 +115,7 @@ const deleteCourse = async (id) => {
     })
 
     return data
-} */
+} 
 
 module.exports = {
     getAllCourses,
@@ -123,5 +123,6 @@ module.exports = {
     createCourse,
     getCoursesByCategory,
     updateCourse,
-    deleteCourse
+    deleteCourse,
+    getMyCourses
 };
