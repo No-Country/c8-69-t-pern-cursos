@@ -1,17 +1,27 @@
 const router = require('express').Router()
+const passport = require('passport')
 
-const categoryServices = require('./categories.services')
-const { getPostsByCategory } = require('../posts/posts.services')
+const categoryServices = require("./categories.services");
+const adminMiddleware = require("../middlewares/role.middleware");
 
-router.route('/') //? /api/v1/categories
-    .get(categoryServices.getAllCategories)
-    .post(categoryServices.postCategory)
-//? /api/v1/categories/:id
-router.get('/:id', categoryServices.getCategoryById)
+require("../middlewares/auth.middleware")(passport);
+//? /
+//? /:id
 
-router.get('/:id/posts', getPostsByCategory)
+router.route("/")
+  .get(categoryServices.getAllCategories)
+  .post(
+    passport.authenticate("jwt", { session: false }),
+    adminMiddleware,
+    categoryServices.postCategory
+  );
 
+router.route("/:id")
+  .get(categoryServices.getCategoryById)
+  .delete(
+    passport.authenticate("jwt", { session: false }),
+    adminMiddleware,
+    categoryServices.deleteCategory
+  ); 
 
-module.exports = router
-
-
+module.exports = router;
