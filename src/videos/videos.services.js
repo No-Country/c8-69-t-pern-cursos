@@ -1,12 +1,26 @@
 const videosControllers = require("./videos.controllers")
 
+const getAllVideos = (req, res) => {
+  videosControllers.getAllVideos()
+      .then(data => {
+          res.status(200).json(data)
+      })
+      .catch(err => {
+          res.status(400).json({message: err.message})
+      })
+}
+
 const getVideoById = (req,res) => { 
     const id = req.params.id;
     videosControllers
         .getVideoById(id)
-        .then((data) => { 
-            res.status(200).json(data);
-         })
+        .then(data => {
+          if(data){
+              res.status(200).json(data)
+          }else {
+              res.status(404).json({message: 'Invalid ID', id})
+          }
+      })
          .catch((err) => { 
             res.status(404).json({message:err.message});
           });
@@ -63,8 +77,7 @@ const getVideoById = (req,res) => {
 
   const deleteVideo = (req, res) => {
     const id = req.params.id;
-    videosControllers
-      .deleteVideo(id)
+    videosControllers.deleteVideo(id)
       .then((data) => {
         if (data) {
           res.status(204).json();
@@ -81,6 +94,7 @@ const getVideoById = (req,res) => {
     getVideoById,
     registerVideo,
     patchVideo,
-    deleteVideo
+    deleteVideo,
+    getAllVideos
   };
   

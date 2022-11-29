@@ -19,7 +19,15 @@ router.get('/', videoServices.getVideoById)
 //! router.delete('/:id')
 
 
-router.route('/teacher/videos')
+router.route('/')
+    .get(videoServices.getAllVideos)
+    .post(
+        passport.authenticate('jwt', {session: false}),
+        instructionServices.postInstruction
+    )
+
+
+router.route('/:videos_id')
     .get(
         passport.authenticate('jwt', {session: false}),
         videoServices.getVideoById)
@@ -35,7 +43,7 @@ router.route('/teacher/videos')
     )
 
     //? /api/v1/videos/:id
-router.route('/:id')
+router.route('/admin/:id')
 .get(videoServices.getVideoById)
 .patch(
     passport.authenticate('jwt', {session: false}),

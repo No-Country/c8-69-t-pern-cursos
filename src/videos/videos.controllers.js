@@ -2,6 +2,12 @@ const uuid = require('uuid')
 
 const Videos = require('../models/videos.models')
 
+const getAllVideos = async() => {
+  const data = await Videos.findAll()
+  return data
+}
+
+
 const getVideoById = async (id) =>{
     const data = await Videos.findOne({
         where: {
@@ -42,6 +48,7 @@ module.exports = {
     getVideoById,
     createVideo,
     updateVideo,
-    deleteVideo
+    deleteVideo,
+    getAllVideos
 };
 
