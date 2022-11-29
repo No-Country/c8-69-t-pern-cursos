@@ -1,5 +1,7 @@
 import { Route, HashRouter, Routes } from "react-router-dom";
 import "./App.css";
+import Footer from "./components/Footer";
+import NavBar from "./components/NavBar";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Courses from "./pages/Courses";
@@ -10,6 +12,8 @@ function App() {
   return (
     <div className="App">
       <HashRouter>
+        <NavBar />
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
@@ -17,6 +21,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/courses" element={<Courses />} />
         </Routes>
+        <Footer />
       </HashRouter>
     </div>
   );

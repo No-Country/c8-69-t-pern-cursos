@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { faKey } from "@fortawesome/free-solid-svg-icons";
-import './styles/login.css'
+import "./styles/login.css";
 import { Link } from "react-router-dom";
 
 const Login = () => {
@@ -50,7 +50,7 @@ const Login = () => {
                   </div>
                 </div>
                 <div className="form-is-grouped float-end ingresar">
-                  <Link to='/'>
+                  <Link to="/">
                     <button className="btn btn-primary mr-1">
                       Iniciar Sesion
                     </button>
@@ -62,7 +62,8 @@ const Login = () => {
               <a
                 href="/vistas/recuperarpasword/index.html"
                 className="olvide-password"
-                id="btn-abrir-popup">
+                id="btn-abrir-popup"
+              >
                 ¿Olvidaste tu contraseña?
               </a>
             </div>
