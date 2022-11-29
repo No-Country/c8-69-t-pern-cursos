@@ -17,11 +17,11 @@ const Contact = () => {
       correo: "",
       mensaje: "",
     },
-    onSubmit: (formData, {resetForm}) => {
+    onSubmit: (formData, { resetForm }) => {
       resetForm();
       console.log("Formulario Enviado");
       cambiarFormularioEnviado(true);
-      setTimeout(() => cambiarFormularioEnviado(false),5000);
+      setTimeout(() => cambiarFormularioEnviado(false), 5000);
     },
     validate: (valores) => {
       let errores = {};
@@ -91,8 +91,8 @@ const Contact = () => {
             onSubmit={formik.handleSubmit}
           >
             <div className="row mb-2">
-              <div class="col-6">
-                <label htmlFor="nombre" class="col-12 col-form-label">
+              <div className="col-6">
+                <label htmlFor="nombre" className="col-12 col-form-label">
                   Nombre
                 </label>
                 <div className="col-12">
@@ -113,8 +113,8 @@ const Contact = () => {
                   )}
                 </div>
               </div>
-              <div class="col-6">
-                <label htmlFor="apellido" class="col-12 col-form-label">
+              <div className="col-6">
+                <label htmlFor="apellido" className="col-12 col-form-label">
                   Apellido
                 </label>
                 <div className="col-12">
@@ -137,8 +137,8 @@ const Contact = () => {
               </div>
             </div>
             <div className="row mb-2">
-              <div class="col-12">
-                <label htmlFor="correo" class="form-label">
+              <div className="col-12">
+                <label htmlFor="correo" className="form-label">
                   Correo
                 </label>
                 <input
@@ -159,8 +159,8 @@ const Contact = () => {
               </div>
             </div>
             <div className="row mb-4">
-              <div class="col-12">
-                <label htmlFor="mensaje" class="col-12 col-form-label">
+              <div className="col-12">
+                <label htmlFor="mensaje" className="col-12 col-form-label">
                   Mensaje:
                 </label>
                 <textarea
@@ -181,17 +181,17 @@ const Contact = () => {
                 )}
               </div>
             </div>
-            <button type="submit" class="btn btn-primary">
+            <button type="submit" className="btn btn-primary">
               Enviar
             </button>
             {formlarioEnviado && <p className="exito">Formulario enviado con exito</p>
-}
+            }
           </form>
           <div className="card-header btn-regreso">
-          <Link to="/">
-            <button className="btn btn-outline-dark">Regresar Home</button>
-          </Link>
-        </div>
+            <Link to="/">
+              <button className="btn btn-outline-dark">Regresar Home</button>
+            </Link>
+          </div>
         </div>
       </div>
     </div>
