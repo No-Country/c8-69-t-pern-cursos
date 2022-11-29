@@ -121,7 +121,7 @@ const getMyUser = (req, res) => {
     });
 };
 
-// TODO crear rutas protegidas /me, con los verbos para update y delete
+
 
 const patchMyUser = (req, res) => {
   const id = req.user.id;
