@@ -1,4 +1,4 @@
-//* Email y Contraseña del usuario 
+/* //* Email y Contraseña del usuario 
 
 const { getUserByEmail } = require("../users/users.controllers")
 const {comparePassword} = require('../utils/crypto')
@@ -26,4 +26,4 @@ const loginUser = async (email, password) => {
 
 module.exports = {
     loginUser
-}
+} */

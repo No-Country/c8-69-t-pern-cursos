@@ -1,8 +1,8 @@
 const router = require('express').Router()
-const passport = require('passport')
+//const passport = require('passport')
 
 const coursesServices = require('./courses.services')
-require('../middlewares/auth.middleware')(passport)
+//require('../middlewares/auth.middleware')(passport)
 
 
 
@@ -12,21 +12,21 @@ require('../middlewares/auth.middleware')(passport)
 router.route('/')
     .get(coursesServices.getAllCourses)
     .post(
-        passport.authenticate('jwt', {session: false}),
+//        passport.authenticate('jwt', {session: false}),
         coursesServices.createCourse
     )
 
 router.route('/:course_id')
     .get(coursesServices.getCoursesByCategory)
     .patch(
-        passport.authenticate('jwt', {session: false}),
+//        passport.authenticate('jwt', {session: false}),
         coursesServices.patchCourse
     )
     .delete(
-        passport.authenticate('jwt', {session: false}),
+//        passport.authenticate('jwt', {session: false}),
         coursesServices.deleteCourse
     )
 
-    module.exports = router;
+module.exports = router;
     
 

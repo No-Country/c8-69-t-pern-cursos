@@ -1,4 +1,4 @@
-
+/* 
 const adminValidate = (req, res, next) => {
     const role = req.user.role
 
@@ -11,3 +11,4 @@ const adminValidate = (req, res, next) => {
 
 
 module.exports = adminValidate
+ */

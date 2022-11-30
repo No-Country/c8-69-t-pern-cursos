@@ -1,4 +1,4 @@
-//? Middleware para proteger rutas
+/* //? Middleware para proteger rutas
 
 //* 1- Revisar si existe un token
 //* 2- Verificar si el token pertenece a un usuario valido
@@ -35,7 +35,7 @@ module.exports = (passport) => {
         })
     )
 }
-
+ */
 
 
 

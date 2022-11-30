@@ -27,9 +27,9 @@ const initModels = () => {
 
     //*Roles - Usuarios
     //? Un pertenece a un rol
-    Users.belongsTo(Roles)
+    //Users.belongsTo(Roles)
     //? un rol puede tener muchos usuarios
-    Roles.hasMany(Users)
+    //Roles.hasMany(Users)
 }
 
 

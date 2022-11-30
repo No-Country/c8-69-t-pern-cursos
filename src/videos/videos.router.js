@@ -1,9 +1,9 @@
-const passport = require('passport')
+//const passport = require('passport')
 const router = require('express').Router()
-const adminValidate = require('../middlewares/role.middleware')
+//const adminValidate = require('../middlewares/role.middleware')
 const videoServices = require('./videos.services')
 
-require('../middlewares/auth.middleware')(passport)
+//require('../middlewares/auth.middleware')(passport)
 
 
 //? rutas raiz
@@ -22,23 +22,23 @@ router.get('/', videoServices.getVideoById)
 router.route('/')
     .get(videoServices.getAllVideos)
     .post(
-        passport.authenticate('jwt', {session: false}),
-        instructionServices.postInstruction
+//        passport.authenticate('jwt', {session: false}),
+        videoServices.registerVideo
     )
 
 
-router.route('/:videos_id')
+router.route('/vid/:id')
     .get(
-        passport.authenticate('jwt', {session: false}),
+//        passport.authenticate('jwt', {session: false}),
         videoServices.getVideoById)
     .put(
-        passport.authenticate('jwt', {session: false}),
+//        passport.authenticate('jwt', {session: false}),
         videoServices.registerVideo)
     .patch(
-        passport.authenticate('jwt', {session: false}),
+//        passport.authenticate('jwt', {session: false}),
         videoServices.patchVideo)
     .delete(
-        passport.authenticate('jwt', {session: false}),
+//        passport.authenticate('jwt', {session: false}),
         videoServices.deleteVideo
     )
 
@@ -46,10 +46,10 @@ router.route('/:videos_id')
 router.route('/admin/:id')
 .get(videoServices.getVideoById)
 .patch(
-    passport.authenticate('jwt', {session: false}),
-    adminValidate,
+//    passport.authenticate('jwt', {session: false}),
+//    adminValidate,
     videoServices.patchVideo)
 .delete(
-    passport.authenticate('jwt', {session: false}),
-    adminValidate,
+//    passport.authenticate('jwt', {session: false}),
+//    adminValidate,
     videoServices.deleteVideo)

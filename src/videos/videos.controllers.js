@@ -1,6 +1,7 @@
 const uuid = require('uuid')
 
 const Videos = require('../models/videos.models')
+const Users = require('../models/users.models')
 
 const getAllVideos = async() => {
   const data = await Videos.findAll()
