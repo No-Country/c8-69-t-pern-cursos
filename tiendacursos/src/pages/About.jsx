@@ -1,11 +1,11 @@
 import React from "react";
-// import "./styles/about.css";
+import "./styles/about.css";
 import { Link } from "react-router-dom";
 import db from "../db/db";
-// import imagen1 from '../assets/imagenes/imagen1.jpg'
-// import imagen2 from '../assets/imagenes/imagen2.jpg'
-// import imagen3 from '../assets/imagenes/imagen3.jpg'
-// import imagen4 from '../assets/imagenes/imagen4.jpg'
+import imagen1 from '../assets/imagenes/imagen1.jpg'
+import imagen2 from '../assets/imagenes/imagen2.jpg'
+import imagen3 from '../assets/imagenes/imagen3.jpg'
+import imagen4 from '../assets/imagenes/imagen4.jpg'
 
 
 const About = () => {
@@ -18,7 +18,7 @@ const About = () => {
       <div className="container-about">
         <article className="cont-about">
           <div className="cont-fotoportada">
-            {/* <img className="fotoportada" src={imagen1} alt="" /> */}
+            <img className="fotoportada" src={imagen1} alt="" />
           </div>
           <div className="text-about">
             <p className="text-about-item"><h1><b>Nuestra base de Éxito! Los Jovenes con sueños y ganas de mejorar su calidad de vida</b></h1></p>
