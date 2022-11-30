@@ -1,19 +1,27 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
 
-const Header = () => {
+import "./styles/header.css";
+
+const Header2 = () => {
   return (
+    <>
+      <section id="hero">
+        <div className="contenedor-header">
+          <div className="hero-box">
+            <h1 className="hero-heading">
+              Una carrera hacia el futuro en el presente
+            </h1>
+            <p className="hero-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+              iure eaque aliquam excepturi voluptas distinctio ab dolorum
+              cupiditate quisquam modi eos blanditiis ipsa, eligendi neque a et
+              laborum sed! Dicta?
+            </p>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};
 
-    <div style={{ background: 'url(https://bootstrapious.com/i/snippets/sn-static-header/background.jpg)' }} className="jumbotron bg-cover text-white">
-      <div className="container py-5 text-center">
-        <h1 className="display-4 font-weight-bold">Tech Courses</h1>
-        <p className="font-italic mb-0">Aprende cuando quieras y donde quieras.</p>
-        <br />
-        <Link to='/courses' role="button" className="btn btn-primary px-5"> See All Courses</Link>
-      </div>
-    </div>
-
-  )
-}
-
-export default Header
+export default Header2;
