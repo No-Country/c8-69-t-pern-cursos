@@ -27,6 +27,7 @@ router.route('/me')
 .get(
 //    passport.authenticate('jwt', {session: false}),
     userServices.getMyUser)
+.put(userServices.registerUser)
 .patch(
 //    passport.authenticate('jwt', {session: false}),
     userServices.patchMyUser
