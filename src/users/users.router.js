@@ -11,6 +11,8 @@ const {getUserCourses} = require('../courses/courses.services')
 //? rutas raiz
 
 router.get('/', userServices.getAllUsers)
+router.put('/', userServices.registerUser)
+
 
 
 //! router.route('/').get( userServices.getAllUsers)
@@ -27,7 +29,7 @@ router.route('/me')
 .get(
 //    passport.authenticate('jwt', {session: false}),
     userServices.getMyUser)
-.put(userServices.registerUser)
+
 .patch(
 //    passport.authenticate('jwt', {session: false}),
     userServices.patchMyUser
