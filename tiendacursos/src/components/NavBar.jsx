@@ -2,7 +2,6 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons"
-
 import './styles/navbar.css'
 import { Link } from "react-router-dom";
 
@@ -40,9 +39,11 @@ const NavBar = () => {
               Iniciar Session
             </button>
           </Link>
-          <button type="button" className="btn btn-outline-success ">
-            Registarse
-          </button>
+          <Link to='/RegistrarUsuario'> 
+            <button className="btn btn-outline-success "type="submit">
+              Registarse
+            </button>
+          </Link>
           <div className="faBars-icon navbar-toggler" id="menu-icon">
             <FontAwesomeIcon icon={faBars} />
           </div>

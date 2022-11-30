@@ -1,0 +1,27 @@
+.cont-registrar {
+  /* background-color: aqua; */
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 88vh;
+}
+.estruc-registro {
+  /* background-color: rgb(255, 7, 7); */
+  width: 520px;
+  height: 550px;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px -5px rgb(0, 0, 0 / 30%);
+}
+.form-registro {
+  width: 100%;
+  display: block;
+  /* background-color: rgb(230, 252, 253); */
+  border-radius: 10px;
+  padding: 0em 1em;
+}
+.contenedor-form-registro {
+  display: flex;
+  justify-content: center;
+}
