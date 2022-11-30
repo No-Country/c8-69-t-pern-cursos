@@ -1,8 +1,8 @@
 import { Navigate, Outlet } from 'react-router-dom';
 
-const ProtectedRoutes = ({ aut }) => {
+const ProtectedRoutes = () => {
 
-  if (aut) {
+  if (false) {
     return <Outlet />
   } else {
     return <Navigate to='/login' />

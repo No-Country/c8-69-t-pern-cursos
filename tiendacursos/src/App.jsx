@@ -12,13 +12,15 @@ import Error404 from './pages/Error404'
 import { useEffect, useState } from 'react'
 import { faTruckMedical } from '@fortawesome/free-solid-svg-icons'
 import ProtectedRoutes from './components/ProtectedRoutes'
-import UserProfile from './pages/UserProfile'
+import MyCourseById from './pages/MyCourseById'
 import MyCourses from './pages/MyCourses'
+import UserProfile from './pages/UserProfile'
+
 
 
 function App() {
   const [show, setShow] = useState()
-  const [aut, setAut] = useState(false);
+  // const [aut, setAut] = useState(false);
 
 
 
@@ -45,7 +47,7 @@ function App() {
           <Route path='*' element={<Error404 />} />
 
 
-          <Route element={<ProtectedRoutes aut={aut} />} >
+          <Route element={<ProtectedRoutes />} >
             <Route path='/mycourses' element={<MyCourses />} />
             <Route path='/mycourses/id' element={<MyCourseById />} />
             <Route path='/user/:id' element={<UserProfile />} />
