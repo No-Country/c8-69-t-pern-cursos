@@ -19,7 +19,7 @@ const Contact = () => {
     },
     onSubmit: (formData, { resetForm }) => {
       resetForm();
-      console.log("Formulario Enviado");
+      console.log(formData);
       cambiarFormularioEnviado(true);
       setTimeout(() => cambiarFormularioEnviado(false), 5000);
     },

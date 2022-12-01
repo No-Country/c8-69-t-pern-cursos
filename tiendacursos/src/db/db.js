@@ -6,7 +6,8 @@ const cursosDB = [{
   price: 1152.00,
   teacher: {
     id: 1,
-    name: 'Fernando Herrera'
+    name: 'Fernando Herrera',
+    image_teacher:'https://t3.ftcdn.net/jpg/01/04/93/90/360_F_104939054_E7P5jaVoNYcXQI7YBrzsVWH2qZc03sn8.jpg'
   },
   categories: {
     id: 1,
@@ -31,7 +32,8 @@ const cursosDB = [{
   price: 1492.00,
   teacher: {
     id: 1,
-    name: 'Robert'
+    name: 'Robert',
+    image_teacher:'https://t3.ftcdn.net/jpg/01/04/93/90/360_F_104939054_E7P5jaVoNYcXQI7YBrzsVWH2qZc03sn8.jpg'
   },
   categories: {
     id: 1,
@@ -56,7 +58,8 @@ const cursosDB = [{
   price: 14820.00,
   teacher: {
     id: 1,
-    name: 'Bernard'
+    name: 'Bernard',
+    image_teacher:'https://t3.ftcdn.net/jpg/01/04/93/90/360_F_104939054_E7P5jaVoNYcXQI7YBrzsVWH2qZc03sn8.jpg'
   },
   categories: {
     id: 1,
@@ -81,7 +84,8 @@ const cursosDB = [{
   price: 14852.00,
   teacher: {
     id: 1,
-    name: 'Robert'
+    name: 'Robert',
+    image_teacher:'https://t3.ftcdn.net/jpg/01/04/93/90/360_F_104939054_E7P5jaVoNYcXQI7YBrzsVWH2qZc03sn8.jpg'
   },
   categories: {
     id: 1,
@@ -106,7 +110,8 @@ const cursosDB = [{
   price: 14362.00,
   teacher: {
     id: 1,
-    name: 'Robert'
+    name: 'Robert',
+    image_teacher:'https://t3.ftcdn.net/jpg/01/04/93/90/360_F_104939054_E7P5jaVoNYcXQI7YBrzsVWH2qZc03sn8.jpg'
   },
   categories: {
     id: 1,
@@ -131,7 +136,8 @@ const cursosDB = [{
   price: 10362.00,
   teacher: {
     id: 1,
-    name: 'Robert'
+    name: 'Robert',
+    image_teacher:'https://t3.ftcdn.net/jpg/01/04/93/90/360_F_104939054_E7P5jaVoNYcXQI7YBrzsVWH2qZc03sn8.jpg'
   },
   categories: {
     id: 1,
@@ -156,7 +162,8 @@ const cursosDB = [{
   price: 15200.00,
   teacher: {
     id: 1,
-    name: 'Robert'
+    name: 'Robert',
+    image_teacher:'https://t3.ftcdn.net/jpg/01/04/93/90/360_F_104939054_E7P5jaVoNYcXQI7YBrzsVWH2qZc03sn8.jpg'
   },
   categories: {
     id: 1,
@@ -181,7 +188,8 @@ const cursosDB = [{
   price: 14200.00,
   teacher: {
     id: 1,
-    name: 'Robert'
+    name: 'Robert',
+    image_teacher:'https://t3.ftcdn.net/jpg/01/04/93/90/360_F_104939054_E7P5jaVoNYcXQI7YBrzsVWH2qZc03sn8.jpg'
   },
   categories: {
     id: 1,
@@ -206,7 +214,8 @@ const cursosDB = [{
   price: 13200.00,
   teacher: {
     id: 1,
-    name: 'Robert'
+    name: 'Robert',
+    image_teacher:'https://t3.ftcdn.net/jpg/01/04/93/90/360_F_104939054_E7P5jaVoNYcXQI7YBrzsVWH2qZc03sn8.jpg'
   },
   categories: {
     id: 1,
@@ -231,7 +240,8 @@ const cursosDB = [{
   price: 17200.00,
   teacher: {
     id: 1,
-    name: 'Robert'
+    name: 'Robert',
+    image_teacher:'https://t3.ftcdn.net/jpg/01/04/93/90/360_F_104939054_E7P5jaVoNYcXQI7YBrzsVWH2qZc03sn8.jpg'
   },
   categories: {
     id: 1,
@@ -256,7 +266,8 @@ const cursosDB = [{
   price: 14500.00,
   teacher: {
     id: 1,
-    name: 'Robert'
+    name: 'Robert',
+    image_teacher:'https://t3.ftcdn.net/jpg/01/04/93/90/360_F_104939054_E7P5jaVoNYcXQI7YBrzsVWH2qZc03sn8.jpg'
   },
   categories: {
     id: 1,
@@ -281,7 +292,8 @@ const cursosDB = [{
   price: 11000.00,
   teacher: {
     id: 1,
-    name: 'Robert'
+    name: 'Robert',
+    image_teacher:'https://t3.ftcdn.net/jpg/01/04/93/90/360_F_104939054_E7P5jaVoNYcXQI7YBrzsVWH2qZc03sn8.jpg'
   },
   categories: {
     id: 1,
@@ -306,7 +318,8 @@ const cursosDB = [{
   price: 9000.00,
   teacher: {
     id: 1,
-    name: 'Robert'
+    name: 'Robert',
+    image_teacher:'https://t3.ftcdn.net/jpg/01/04/93/90/360_F_104939054_E7P5jaVoNYcXQI7YBrzsVWH2qZc03sn8.jpg'
   },
   categories: {
     id: 1,
@@ -331,7 +344,8 @@ const cursosDB = [{
   price: 8900.00,
   teacher: {
     id: 1,
-    name: 'Robert'
+    name: 'Robert',
+    image_teacher:'https://t3.ftcdn.net/jpg/01/04/93/90/360_F_104939054_E7P5jaVoNYcXQI7YBrzsVWH2qZc03sn8.jpg'
   },
   categories: {
     id: 1,
@@ -356,7 +370,8 @@ const cursosDB = [{
   price: 7800.00,
   teacher: {
     id: 1,
-    name: 'Robert'
+    name: 'Robert',
+    image_teacher:'https://t3.ftcdn.net/jpg/01/04/93/90/360_F_104939054_E7P5jaVoNYcXQI7YBrzsVWH2qZc03sn8.jpg'
   },
   categories: {
     id: 1,
@@ -381,7 +396,8 @@ const cursosDB = [{
   price: 12400.00,
   teacher: {
     id: 1,
-    name: 'Robert'
+    name: 'Robert',
+    image_teacher:'https://t3.ftcdn.net/jpg/01/04/93/90/360_F_104939054_E7P5jaVoNYcXQI7YBrzsVWH2qZc03sn8.jpg'
   },
   categories: {
     id: 1,
@@ -406,7 +422,8 @@ const cursosDB = [{
   price: 17800.00,
   teacher: {
     id: 1,
-    name: 'Robert'
+    name: 'Robert',
+    image_teacher:'https://t3.ftcdn.net/jpg/01/04/93/90/360_F_104939054_E7P5jaVoNYcXQI7YBrzsVWH2qZc03sn8.jpg'
   },
   categories: {
     id: 1,
@@ -431,7 +448,8 @@ const cursosDB = [{
   price: 9600.00,
   teacher: {
     id: 1,
-    name: 'Robert'
+    name: 'Robert',
+    image_teacher:'https://t3.ftcdn.net/jpg/01/04/93/90/360_F_104939054_E7P5jaVoNYcXQI7YBrzsVWH2qZc03sn8.jpg'
   },
   categories: {
     id: 1,
@@ -456,7 +474,8 @@ const cursosDB = [{
   price: 1100.00,
   teacher: {
     id: 1,
-    name: 'Robert'
+    name: 'Robert',
+    image_teacher:'https://t3.ftcdn.net/jpg/01/04/93/90/360_F_104939054_E7P5jaVoNYcXQI7YBrzsVWH2qZc03sn8.jpg'
   },
   categories: {
     id: 1,
@@ -481,7 +500,8 @@ const cursosDB = [{
   price: 1554.00,
   teacher: {
     id: 1,
-    name: 'Robert'
+    name: 'Robert',
+    image_teacher:'https://t3.ftcdn.net/jpg/01/04/93/90/360_F_104939054_E7P5jaVoNYcXQI7YBrzsVWH2qZc03sn8.jpg'
   },
   categories: {
     id: 1,

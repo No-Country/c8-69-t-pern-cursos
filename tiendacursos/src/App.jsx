@@ -17,20 +17,20 @@ import { faTruckMedical } from '@fortawesome/free-solid-svg-icons'
 function App() {
   const [show, setShow] = useState()
 
-  // useEffect(() => {
-  //   // if (show === false || show === undefined) {
-  //   //   setShow(true)
-  //   // }
-  // }, [])
+  useEffect(() => {
+    if (show === false || show === undefined) {
+      setShow(true)
+    }
+  }, [])
 
 
   return (
     <div className="App">
       <HashRouter>
-        {/* {show &&
+        {show &&
           <NavBar />
-        } */}
-        <NavBar />
+        }
+        {/* <NavBar /> */}
         <Routes>
           <Route path='/login' element={<Login setShow={setShow} show={show} />} />
           <Route path='/' element={<Home />} />
