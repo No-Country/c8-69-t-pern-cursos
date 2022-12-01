@@ -1,17 +1,18 @@
 .bg-divisior {
-    background-color:#f7f9fa;
+  background-color: #f7f9fa;
 }
+
 .icon {
-    width: 40px !important;
-    height: 40px !important;
-    background-color: #d1d7dc;
-    border-radius: 50% !important;
+  width: 40px !important;
+  height: 40px !important;
+  background-color: #d1d7dc;
+  border-radius: 50% !important;
 }
 
 .icon svg {
-    margin: 5px !important;
+  margin: 5px !important;
 }
 
-.bg-dark {
-    background-color:#2f73a4 !important;
+.bg-blue {
+  background-color: #2f73a4;
 }

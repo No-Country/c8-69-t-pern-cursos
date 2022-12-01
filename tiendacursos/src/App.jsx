@@ -12,10 +12,18 @@ import Error404 from './pages/Error404'
 import RegistarUsuario from './pages/RegistrarUsuario'
 import { useEffect, useState } from 'react'
 import { faTruckMedical } from '@fortawesome/free-solid-svg-icons'
+import ProtectedRoutes from './components/ProtectedRoutes'
+import MyCourseById from './pages/MyCourseById'
+import MyCourses from './pages/MyCourses'
+import UserProfile from './pages/UserProfile'
+
 
 
 function App() {
   const [show, setShow] = useState()
+  // const [aut, setAut] = useState(false);
+
+
 
   useEffect(() => {
     if (show === false || show === undefined) {
@@ -30,7 +38,6 @@ function App() {
         {show &&
           <NavBar />
         }
-        {/* <NavBar /> */}
         <Routes>
           <Route path='/login' element={<Login setShow={setShow} show={show} />} />
           <Route path='/' element={<Home />} />
@@ -40,6 +47,14 @@ function App() {
           <Route path='/course/:id' element={<CourseDetail />} />
           <Route path='/RegistrarUsuario' element={<RegistarUsuario />} />
           <Route path='*' element={<Error404 />} />
+
+
+          <Route element={<ProtectedRoutes />} >
+            <Route path='/mycourses' element={<MyCourses setShow={setShow} show={show} />} />
+            <Route path='/mycourses/id' element={<MyCourseById setShow={setShow} show={show} />} />
+            <Route path='/user/:id' element={<UserProfile setShow={setShow} show={show} />} />
+          </Route>
+
         </Routes>
         {show &&
           <Footer />
