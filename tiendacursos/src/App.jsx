@@ -48,9 +48,9 @@ function App() {
 
 
           <Route element={<ProtectedRoutes />} >
-            <Route path='/mycourses' element={<MyCourses />} />
-            <Route path='/mycourses/id' element={<MyCourseById />} />
-            <Route path='/user/:id' element={<UserProfile />} />
+            <Route path='/mycourses' element={<MyCourses setShow={setShow} show={show} />} />
+            <Route path='/mycourses/id' element={<MyCourseById setShow={setShow} show={show} />} />
+            <Route path='/user/:id' element={<UserProfile setShow={setShow} show={show} />} />
           </Route>
 
         </Routes>

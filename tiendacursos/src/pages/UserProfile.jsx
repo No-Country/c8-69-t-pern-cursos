@@ -1,8 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
-const UserProfile = () => {
+const UserProfile = ({ setShow, show }) => {
+  useEffect(() => {
+    if (show === false || show === undefined) {
+      setShow(true)
+    }
+  }, [])
+
   return (
-    <div>UserProfile</div>
+    <div className='container'>
+      <h1>UserProfile</h1>
+    </div>
   )
 }
 
