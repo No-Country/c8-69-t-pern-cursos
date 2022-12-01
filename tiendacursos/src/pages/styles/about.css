@@ -1,45 +1,41 @@
 .container-about{
-    padding-top: 30px;
     width: 100%;
+    height: auto;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5em;
-}
-
-.render{
-    width: 580px;
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    
+    gap:1rem;
+    padding-bottom: 50px;
 }
 
 .cont-about{
-    width: 100%;
-    height: 95vh;
-   
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+   width: 90%;
+   height: 500px;
+   margin-top: 100px;
+   padding: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
     align-items: center;
-    gap:5em;
+   flex-wrap: wrap;
+   gap: 2rem;
+   background-color: #0f1c3e19;
 }
+
 
 .cont-fotoportada{
-    width: 40%;
+    width: 90%;
     height: auto;
+    margin: 20px;
+    padding: 10px;
+   
 }
-
 .text-about{
-    width: 25%;
-    height: 50vh;
-    background-color: white;
+    width: 100%;
+    height: auto;
+    
     display: flex;
     align-items: center;
     text-align: center;
@@ -47,90 +43,195 @@
 
 .fotoportada{
     width: 100%;
-    text-align: end;
 }
 .text-about-item{
-   
     font-size: 30px;
-    color: black;
+    color: black
 }
 
 .btn-about{
-    background-color: black;
-    color: white;
+    text-decoration: none;
     width: 150px;
     height: 50px;
-    cursor: pointer;
+    color: rgba(255, 255, 255, 0.885);
+    background-color: rgb(0, 153, 255);
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 0 rgb(0, 0, 0);
+    transition: ease-out .4s;
+    font-size: 1.5rem;
+    outline: none;
+    border: none;
+    margin-bottom: 10px;
 }
-
 .btn-about:hover{
-    background-color: white;
-    color: black;
-    font-weight: 40px;
+    box-shadow: inset 150px 0 0 0 black;;
+    color: white;
    
 }
 
+
+
+
+
 .title-plantel{
-    width: 100%;
-    height: 10vh;
-    background-color: black;
-    color: white;
-    margin-left: 40px;
-    margin-right: 40px;
-    align-items: center;
-
-    font-size: 25px;
+    width: 90%;
+    height: auto;
+    padding: 10px;
     display: flex;
-    flex-direction: row;
-    gap: 3em;
-
-    justify-content: space-around;
-    padding: 15px;
+    flex-direction: column;
+    flex-wrap:wrap;
+    gap: 0.3em;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
 .btn-plantel{
 
-    background-color: black;
-    color: white;
-    border-color: white;
+    text-decoration: none;
     width: 150px;
     height: 50px;
-    cursor: pointer;
-    font-size: 20px;
+    color: rgba(255, 255, 255, 0.885);
+    background-color: rgb(0, 153, 255);
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 0 black;
+    transition: ease-out .4s;
+    font-size: 1.5rem;
+    outline: none;
+    border: none;
+    margin-bottom: 10px;
 }
 
 .btn-plantel:hover{
-    background-color: white;
-    color: black;
-    font-weight: 30px;
+    box-shadow: inset 150px 0 0 0 black;;
+    color: white;
    
 }
 
 .btn-plantel2{
 
-    background-color: white;
-    color: black;
+    text-decoration: none;
     width: 150px;
     height: 50px;
-    cursor: pointer;
-    font-size: 20px;
+    color: rgba(255, 255, 255, 0.885);
+    background-color: rgb(0, 153, 255);
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 0 black;
+    transition: ease-out .4s;
+    font-size: 1.5rem;
+    outline: none;
+    border: none;
+    margin-bottom: 10px;
     
 }
 
 .btn-plantel2:hover{
+    box-shadow: inset 150px 0 0 0 black;;
+    color: white;
+}
+
+.card-teacher{
+    width: 90%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}  
+
+.contain-card-teacher{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 10px;
+}
+.img-teacher-contain{
+    width: 100%;
+    background-color: azure;
+}
+.img-teacher{
+    width: 100%;
+}
+
+.card-teacher-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     background-color: black;
     color: white;
-    font-weight: 30px;
-    border-color: white;
-   
+    padding-bottom: 20px;
+    padding-top: 10px;
 }
 
-.container-carousel{
-    width: 1200px;
-    background-color: brown;
-    height: 50vh;
+.card-body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1em;
 }
 
-.container-carousel{
-    width: 300px;
+
+@media (min-width:900px){
+    .cont-about{
+       flex-direction: row;
+       flex-wrap: nowrap;
+        }
+    }
+
+@media (min-width:900px){
+    .title-plantel{
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 5em;
+        flex-wrap: wrap;
+         }
+     }
+
+@media (min-width:900px){
+
+        .card-teacher{
+          flex-direction: row;
+          width: 300px;
+          height: 500px;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+           }
+}
+
+@media (min-width:900px){
+
+    .contain-card-teacher{
+      flex-direction: row;
+      width: 300px;
+      height: 350px;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      
+       }
+}
+
+@media (min-width:900px){
+          .card-teacher-text{
+            flex-direction: row;
+           height: 200px;
+            flex-wrap: wrap;
+             }
+  }
+
+  @media (min-width:900px){
+    .card-body{
+      flex-direction: row;
+    justify-content: center;
+     height: 200px;
+      flex-wrap: wrap;
+       }
 }
