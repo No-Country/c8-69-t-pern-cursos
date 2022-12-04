@@ -88,9 +88,9 @@ const Login = ({ setShow, show }) => {
               <div className="row h-100 align-items-center justify-content-center">
                 <div className="col-auto">
                   <div className="card-body">
-                    <h1 id="titulo-registrame">
+                    <h5 id="titulo-registrame">
                       ¿Aún no tienes cuenta DemoCursos?
-                    </h1>
+                    </h5>
                   </div>
                 </div>
               </div>

@@ -12,25 +12,25 @@ const About = () => {
   return (
     <>
      
-      <div className="container-about">
+      <div className="container-about contenedor-about">
         <article className="cont-about">
           <div className="cont-fotoportada">
             <img className="fotoportada" src={imagen1} alt="" />
           </div>
-          <div className="text-about">
-            <p className="text-about-item"><h1><b>Nuestra base de Éxito! Los Jovenes con sueños y ganas de mejorar su calidad de vida</b></h1></p>
+          <div className="text-about texto-about">
+            <p className="text-about-item texto-about-item"><h1><b>Nuestra base de Éxito! Los Jovenes con sueños y ganas de mejorar su calidad de vida</b></h1></p>
           </div>
-          <Link to="/"><button className="btn-about">Ver Cursos</button></Link>
+          <Link to="/"><button className="btn-about boton-about">Ver Cursos</button></Link>
         </article>
        
 
 
    
-       <div className="title-plantel">
+       <div className="title-plantel titulo-plantel">
         
           <p> Mas de 100 profesores calificados y renombrados</p>
-          <Link to="/"><button className="btn-plantel">Ver Cursos</button></Link>
-          <Link to="/contact"><button className="btn-plantel2">Inscribite</button></Link>
+          <Link to="/"><button className="btn-plantel boton-plantel">Ver Cursos</button></Link>
+          <Link to="/contact"><button className="boton-plantel2 boton-plantel2">Inscribite</button></Link>
         </div>
 
 
@@ -39,20 +39,20 @@ const About = () => {
           <>
 
             <div
-              className="card mb-1 mt-2 card-teacher" key={course.id}>
+              className="card mb-1 mt-2 card-teacher targeta-teacher contenido-tarjeta-teacher" key={course.id}>
 
 
                   <div className="row g-0 contain-card-teacher">
-                    <div className="col-md-4 col-6 img-teacher-contain">
+                    <div className="col-md-4 col-6 img-teacher-contain contenido-imagen-teacher">
                       <img
                         src={course.teacher.image_teacher}
-                        className="img-fluid rounded-start imgCard img-teacher"
+                        className="img-fluid rounded-start imgCard img-teacher imagen-teacher"
                         alt="..."
                       />
                     </div>
 
-                    <div className="col-md-8 card-teacher-text">
-                      <div className="card-body">
+                    <div className="col-md-8 card-teacher-text tajeta-teacher-texto">
+                      <div className="card-body tajeta-body">
                         <h5 className="card-title">{course.teacher.name}</h5>
                         <p className="card-text">{course.title}</p>
                         <p className="card-text">
