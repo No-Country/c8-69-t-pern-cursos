@@ -1,7 +1,8 @@
 const uuid = require('uuid')
 
 const Videos = require('../models/videos.models')
-const Users = require('../models/users.models')
+const Courses = require('../models/courses.models')
+
 
 const getAllVideos = async() => {
   const data = await Videos.findAll()
@@ -22,7 +23,9 @@ const createVideo = async (data) => {
     const newVideo = await Videos.create({
         id: uuid.v4(),
         title: data.title,
-        url: data.url
+        url: data.url,
+        number: data.number
+
     })
     return newVideo
 }
@@ -45,11 +48,39 @@ const deleteVideo = async (id) => {
   return data
 }
 
+/*
+const getVideosByCourse = async(courseId) =>{
+  const videosCourse = await Videos.findAll({
+    attributes: ['course_id'],
+    where : {
+      courseId
+    }
+  })
+
+const filteredVideos = videosCourse.map(obj => obj.course_id)
+
+
+return filteredVideos
+}
+*/
+
+ const getVideosByCourseId = async (course_id) =>{
+    const data = await Videos.findAll({
+        where: {
+            course_id: course_id
+        }
+    })
+    return data
+}
+ 
+
+
 module.exports = {
+    getAllVideos,
     getVideoById,
     createVideo,
     updateVideo,
     deleteVideo,
-    getAllVideos
+    getVideosByCourseId
 };
 

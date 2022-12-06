@@ -3,7 +3,7 @@ const {Op} = require('sequelize')
 const Categories = require('../models/categories.models')
 const Courses = require('../models/courses.models')
 const Users = require('../models/users.models')
-const { hashPassword } = require('../utils/crypto')
+//const { hashPassword } = require('../utils/crypto')
 
 const getAllCourses = async(offset, limit) => {
     const data = await Courses.findAll({
@@ -60,10 +60,8 @@ const createCourse = async (data) => {
     const response = await Courses.create({
         id: uuid.v4(),
         title: data.title,
-        description: data.description,
-        userId: data.userId, //? este es el user id que viene desde el token
-        categoryId: data.categoryId,
-        videoId:  data.videoId
+        description: data.description, 
+        categoryId: data.categoryId
     })
     return response
 }

@@ -1,5 +1,6 @@
 const db = require('../utils/database')
 const {DataTypes} = require('sequelize')
+const Courses = require('./courses.models.js')
 
 const Video = db.define('video',{
     id: {
@@ -14,6 +15,19 @@ const Video = db.define('video',{
     url: {
         type: DataTypes.TEXT,
         allowNull: false
+    },
+    number: {
+        type: DataTypes.INTEGER,
+        allowNull: false
+    },
+    courseId: {
+        type: DataTypes.UUID,
+        allowNull: true,
+        field: 'course_id',
+        references: {
+            key: 'id',
+            model: Courses
+        }
     }
 })
 

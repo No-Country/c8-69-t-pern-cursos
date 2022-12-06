@@ -46,25 +46,25 @@ const getCourseById = (req, res) => {
 
 
 const createCourse = (req, res) => {
-    //? Este es el id del usuario loggeado
-    const userId = req.user.id 
-    const { title, description, categoryId, videoId } = req.body
-    if(title && description && categoryId && videoId){
-        coursesControllers.createCourse({title, description, userId, categoryId, videoId})
+    //const userId = req.user.id 
+    const { title, description, categoryId } = req.body
+    if(title && description  && categoryId ){
+        coursesControllers.createCourse({title, description,  categoryId})
             .then(data => {
                 res.status(201).json(data)
             })
             .catch(err => {
-                res.status(400).json(err.message)
+                res.status(400).json({
+                    message: err.message
+                })
             })
     } else {
         res.status(400).json({
             message: 'Missing Data',
             fields: {
-                title: 'string',
-                description: 'string',
-                categoryId: 'uuid',
-                videoId: 'uuid'
+                title: "Principios de ",
+                description: "Aprende ...",
+                categoryId: "int"
             }
         })
     }

@@ -27,13 +27,13 @@ router.route('/')
     )
 
 
-router.route('/vid/:id')
+router.route('/:id')
     .get(
 //        passport.authenticate('jwt', {session: false}),
         videoServices.getVideoById)
-    .put(
+//    .put(
 //        passport.authenticate('jwt', {session: false}),
-        videoServices.registerVideo)
+//        videoServices.registerVideo)
     .patch(
 //        passport.authenticate('jwt', {session: false}),
         videoServices.patchVideo)
@@ -41,7 +41,7 @@ router.route('/vid/:id')
 //        passport.authenticate('jwt', {session: false}),
         videoServices.deleteVideo
     )
-
+/*
     //? /api/v1/videos/:id
 router.route('/admin/:id')
 .get(videoServices.getVideoById)
@@ -53,3 +53,9 @@ router.route('/admin/:id')
 //    passport.authenticate('jwt', {session: false}),
 //    adminValidate,
     videoServices.deleteVideo)
+
+    
+    */
+//? /api/v1/videos/courses/course_id/
+
+module.exports = router

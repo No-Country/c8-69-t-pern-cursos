@@ -2,7 +2,7 @@ const db = require('../utils/database')
 const {DataTypes} = require('sequelize')
 const Users = require('./users.models')
 const Categories = require('./categories.models')
-const Video = require('./videos.models')
+
 
 
 
@@ -21,15 +21,22 @@ const Courses = db.define('courses', {
         allowNull: false
     },
     //? Llave foranea de Users
-    userId: {
+    userId:{
         type: DataTypes.UUID,
         allowNull: false,
         field: 'user_id',
-        references: {
-            key: 'id',
-            model: Users
-        },
+        defaultValue: "6f3308b6-38cd-4c67-9036-b87b9b07719f",
+        
     },
+    //userId: {
+    //    type: DataTypes.UUID,
+    //    allowNull: true,
+    //    field: 'user_id',
+    //    references: {
+    //        key: 'id',
+    //        model: Users
+    //    },
+   // },
     categoryId: {
         type: DataTypes.INTEGER,
         allowNull: false,
@@ -37,15 +44,6 @@ const Courses = db.define('courses', {
         references: {
             key: 'id',
             model: Categories
-        }
-    },
-    videoId: {
-        type: DataTypes.UUID,
-        allowNull: false,
-        field: 'video_id',
-        references: {
-            key: 'id',
-            model: Video
         }
     }
 

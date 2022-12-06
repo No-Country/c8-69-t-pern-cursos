@@ -11,7 +11,7 @@ const {getUserCourses} = require('../courses/courses.services')
 //? rutas raiz
 
 router.get('/', userServices.getAllUsers)
-router.put('/', userServices.registerUser)
+router.post('/', userServices.registerUser)
 
 
 

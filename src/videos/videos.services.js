@@ -29,14 +29,16 @@ const getVideoById = (req,res) => {
  const registerVideo = (req,res) => {
     const {
         title,
-        url
+        url,
+        number
     } = req.body;
 
-    if (title && url){
+    if (title && url && number){
         videosControllers
             .createVideo({
                 title,
-                url
+                url,
+                number
             })
             .then((data) => {
               res.status(201).json(data);
@@ -49,7 +51,9 @@ const getVideoById = (req,res) => {
             message: "All field must be completed",
             fields: {
                 title: 'string',
-                url: 'string'
+                url: 'string',
+                number: 'int',
+                course: 'id-course *optional*'
             }
         })
     }
@@ -57,10 +61,10 @@ const getVideoById = (req,res) => {
 
  const patchVideo = (req, res) => {
     const id = req.params.id;
-    const { title, url} = req.body;
+    const { title, url, number} = req.body;
   
     videosControllers
-      .updateVideo(id, { title, url })
+      .updateVideo(id, { title, url, number })
       .then((data) => {
         if (data[0]) {
           res
@@ -90,11 +94,27 @@ const getVideoById = (req,res) => {
       });
   };
 
+  const getVideosByCourseId = (req, res) => {
+    const id = req.course.id; //? req.user contiene la informacion del token desencriptado
+  
+    usersControllers
+      .getVideosByCourseId(id)
+      .then((data) => {
+        res.status(200).json(data);
+      })
+      .catch((err) => {
+        res.status(400).json({ message: err.message });
+      });
+  };
+
+
+
   module.exports = {
     getVideoById,
     registerVideo,
     patchVideo,
     deleteVideo,
-    getAllVideos
+    getAllVideos,
+    getVideosByCourseId
   };
   
