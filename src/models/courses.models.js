@@ -26,7 +26,10 @@ const Courses = db.define('courses', {
         allowNull: false,
         field: 'user_id',
         defaultValue: "6f3308b6-38cd-4c67-9036-b87b9b07719f",
-        
+        references: {
+                    key: 'id',
+                    model: Users
+                },
     },
     //userId: {
     //    type: DataTypes.UUID,

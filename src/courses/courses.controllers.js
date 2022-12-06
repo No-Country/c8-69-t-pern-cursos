@@ -5,30 +5,10 @@ const Courses = require('../models/courses.models')
 const Users = require('../models/users.models')
 //const { hashPassword } = require('../utils/crypto')
 
-const getAllCourses = async(offset, limit) => {
-    const data = await Courses.findAll({
-        offset: offset,
-        limit: limit,
-        attributes: {
-            exclude: ['courseId', 'createdAt', 'updatedAt']
-        },
-        include: [
-            {
-                model: Courses,
-                as: 'Course',
-                attributes: ['id', 'title', 'description', 'categoryId']
-            },
-            {
-                model: Categories
-            },
-            {
-                model: Users,
-                attributes: ['id', 'firstName', 'lastName']
-            }
-        ]
-    })
+const getAllCourses = async() => {
+    const data = await Courses.findAll()
     return data
-}
+  }
 
 const getCourseById = async(id) => {
     const data = await Courses.findOne({

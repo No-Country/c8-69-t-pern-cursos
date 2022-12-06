@@ -1,28 +1,15 @@
 const coursesControllers = require('./courses.controllers');
 const { host } = require('../config')
 
-const getAllCourses = (req, res) =>{
-    //? localhost:9000/api/v1/courses?offset=0&limit=20
-    const offset = Number(req.query.offset) || 0
-    //! const offset = req.query.offset ? req.query.offset : 0
-    const limit = Number(req.query.limit) || 10
-    //? offset: donde inicia
-    //? limit: cantidad maxima de entidades a mostrar por pagina
-const urlBase = `${host}/api/v1/courses`
-coursesControllers.getAllCourses(offset, limit)
+const getAllCourses = (req, res) => {
+    coursesControllers.getAllCourses()
         .then(data => {
-            res.status(200).json({
-                next: `${urlBase}?offset=${offset + limit}&limit=${limit}` ,
-                prev: `${urlBase}`,
-                offset,
-                limit,
-                results: data
-            })
+            res.status(200).json(data)
         })
         .catch(err => {
             res.status(400).json({message: err.message})
         })
-}
+  }
 
 //? /api/v1/courses/2/users/
 //? router.get('/api/v1/courses/:course_id')
@@ -47,9 +34,9 @@ const getCourseById = (req, res) => {
 
 const createCourse = (req, res) => {
     //const userId = req.user.id 
-    const { title, description, categoryId } = req.body
+    const { title, description, userId, categoryId } = req.body
     if(title && description  && categoryId ){
-        coursesControllers.createCourse({title, description,  categoryId})
+        coursesControllers.createCourse({title, description, userId, categoryId})
             .then(data => {
                 res.status(201).json(data)
             })
