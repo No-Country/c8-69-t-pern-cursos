@@ -2,7 +2,7 @@ const router = require('express').Router()
 //const passport = require('passport')
 
 const coursesServices = require('./courses.services')
-const videoServices = require('../videos/videos.services')
+
 //require('../middlewares/auth.middleware')(passport)
 
 
@@ -18,7 +18,7 @@ router.route('/')
     )
 
 router.route('/:course_id')
-    .get(coursesServices.getCoursesByCategory)
+    .get(coursesServices.getCourseById)
     .patch(
 //        passport.authenticate('jwt', {session: false}),
         coursesServices.patchCourse
@@ -28,8 +28,8 @@ router.route('/:course_id')
         coursesServices.deleteCourse
     )
 //? /api/v1/videos/courses/course_id/
-router.route('/:course_id/list_courses')
-.get(videoServices.getVideosByCourseId)
+//router.route('/:course_id/list_courses')
+//.get(videoServices.getVideosByCourseId)
 
 module.exports = router;
     

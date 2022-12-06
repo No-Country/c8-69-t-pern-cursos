@@ -8,7 +8,7 @@ const videoServices = require('./videos.services')
 
 //? rutas raiz
 
-router.get('/', videoServices.getVideoById)
+
 
 
 //? rutas dinamicas por ID /videos/:id
@@ -57,5 +57,6 @@ router.route('/admin/:id')
     
     */
 //? /api/v1/videos/courses/course_id/
-
+router.route('/list-videos/:course_id')
+    .get(videoServices.getVideosByCourseId)
 module.exports = router

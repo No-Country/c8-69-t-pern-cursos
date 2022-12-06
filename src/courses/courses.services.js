@@ -1,4 +1,5 @@
 const coursesControllers = require('./courses.controllers');
+//const videosControllers = require('../videos/videos.controllers')
 const { host } = require('../config')
 
 const getAllCourses = (req, res) => {
@@ -114,6 +115,18 @@ const getUserCourses = (req, res) => {
         })
 }
 
+
+/*const getVideosByCourseId = (req, res) => {
+    const courseId = req.course.id
+    videosControllers.getVideosByCourseId(courseId)
+        .then(data => {
+            res.status(200).json(data)
+        })
+        .catch( err => {
+            res.status(400).json({message: err.message})
+        })
+}*/
+
 module.exports = {
     getAllCourses,
     getCourseById,
@@ -121,7 +134,8 @@ module.exports = {
     patchCourse,
     getCoursesByCategory,
     deleteCourse,
-    getUserCourses
+    getUserCourses,
+   // getVideosByCourseId
 };
 
 

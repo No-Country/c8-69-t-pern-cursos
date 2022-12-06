@@ -3,6 +3,7 @@ const {Op} = require('sequelize')
 const Categories = require('../models/categories.models')
 const Courses = require('../models/courses.models')
 const Users = require('../models/users.models')
+const Videos = require('../models/videos.models')
 //const { hashPassword } = require('../utils/crypto')
 
 const getAllCourses = async() => {
@@ -15,26 +16,20 @@ const getCourseById = async(id) => {
         where: {
             id
         },
-        attributes: {
-            exclude: ['courseId', 'createdAt', 'updatedAt']
-         },
-        include: [
-            {
-                model: Courses,
-                as: 'course',
-                attributes: ['id', 'title', 'description', 'categoryId']
-            },
-            {
-                model: Categories,
-            },
-            {
-                model: Users,
-                attributes: ['id', 'firstName', 'lastName']
-            }
-        ]
+
     })
     return data
 }
+
+/*const getVideosByCourseId = async (id) =>{
+    const data = await Videos.findAll({
+        attributes: ['coursesId'],
+        where: {
+            userId
+        }
+    })
+    return data
+}*/
 
 const createCourse = async (data) => {
     const response = await Courses.create({
@@ -102,5 +97,5 @@ module.exports = {
     getCoursesByCategory,
     updateCourse,
     deleteCourse,
-    getMyCourses
+    getMyCourses,
 };

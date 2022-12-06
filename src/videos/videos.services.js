@@ -30,7 +30,8 @@ const getVideoById = (req,res) => {
     const {
         title,
         url,
-        number
+        number,
+        courseId
     } = req.body;
 
     if (title && url && number){
@@ -38,7 +39,8 @@ const getVideoById = (req,res) => {
             .createVideo({
                 title,
                 url,
-                number
+                number,
+                courseId
             })
             .then((data) => {
               res.status(201).json(data);
@@ -53,7 +55,7 @@ const getVideoById = (req,res) => {
                 title: 'string',
                 url: 'string',
                 number: 'int',
-                course: 'id-course *optional*'
+                courseId: 'id-course'
             }
         })
     }
@@ -61,10 +63,10 @@ const getVideoById = (req,res) => {
 
  const patchVideo = (req, res) => {
     const id = req.params.id;
-    const { title, url, number} = req.body;
+    const { title, url, number, courseId} = req.body;
   
     videosControllers
-      .updateVideo(id, { title, url, number })
+      .updateVideo(id, { title, url, number, courseId })
       .then((data) => {
         if (data[0]) {
           res
@@ -95,10 +97,10 @@ const getVideoById = (req,res) => {
   };
 
   const getVideosByCourseId = (req, res) => {
-    const id = req.course.id; //? req.user contiene la informacion del token desencriptado
+    const {courseId} = req.body
   
-    usersControllers
-      .getVideosByCourseId(id)
+    videosControllers
+      .getVideosByCourseId(courseId)
       .then((data) => {
         res.status(200).json(data);
       })

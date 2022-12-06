@@ -22,7 +22,7 @@ const Video = db.define('video',{
     },
     courseId: {
         type: DataTypes.UUID,
-        allowNull: true,
+        allowNull: false,
         field: 'course_id',
         references: {
             key: 'id',

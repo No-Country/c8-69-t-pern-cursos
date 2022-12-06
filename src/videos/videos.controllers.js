@@ -19,12 +19,23 @@ const getVideoById = async (id) =>{
     return data
 }
 
+const getVideosByCourseId = async (courseId) =>{
+  const data = await Videos.findAll({
+      attributes: ['id','title', 'url', 'number','courseId'],
+      where: {
+          courseId: courseId
+      }
+  })
+  return data
+}
+
 const createVideo = async (data) => {
     const newVideo = await Videos.create({
         id: uuid.v4(),
         title: data.title,
         url: data.url,
-        number: data.number
+        number: data.number,
+        courseId: data.courseId
 
     })
     return newVideo
@@ -64,23 +75,16 @@ return filteredVideos
 }
 */
 
- const getVideosByCourseId = async (course_id) =>{
-    const data = await Videos.findAll({
-        where: {
-            course_id: course_id
-        }
-    })
-    return data
-}
+
  
 
 
 module.exports = {
     getAllVideos,
     getVideoById,
+    getVideosByCourseId,
     createVideo,
     updateVideo,
-    deleteVideo,
-    getVideosByCourseId
+    deleteVideo
 };
 
