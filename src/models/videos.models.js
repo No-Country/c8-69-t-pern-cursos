@@ -29,6 +29,9 @@ const Video = db.define('video',{
             model: Courses
         }
     }
+}, {
+    //? Evita que sequelize agregue las columnas de createdAt y updatedAt
+    timestamps : false
 })
 
 module.exports = Video

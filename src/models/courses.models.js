@@ -21,15 +21,14 @@ const Courses = db.define('courses', {
         allowNull: false
     },
     //? Llave foranea de Users
-    userId:{
+    userId : {
         type: DataTypes.UUID,
         allowNull: false,
         field: 'user_id',
-        defaultValue: "6f3308b6-38cd-4c67-9036-b87b9b07719f",
         references: {
-                    key: 'id',
-                    model: Users
-                },
+            key: 'id',
+            model: Users
+             },
     },
     //userId: {
     //    type: DataTypes.UUID,
@@ -49,7 +48,11 @@ const Courses = db.define('courses', {
             model: Categories
         }
     }
+    
 
+},{
+    //? Evita que sequelize agregue las columnas de createdAt y updatedAt
+    timestamps : false
 })
 
 

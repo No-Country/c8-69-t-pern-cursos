@@ -1,9 +1,6 @@
 const uuid = require('uuid')
 const {Op} = require('sequelize')
-const Categories = require('../models/categories.models')
 const Courses = require('../models/courses.models')
-const Users = require('../models/users.models')
-const Videos = require('../models/videos.models')
 //const { hashPassword } = require('../utils/crypto')
 
 const getAllCourses = async() => {
@@ -35,8 +32,9 @@ const createCourse = async (data) => {
     const response = await Courses.create({
         id: uuid.v4(),
         title: data.title,
-        description: data.description, 
-        categoryId: data.categoryId
+        description: data.description,
+        userId: data.userId,
+        categoryId: data.categoryId,
     })
     return response
 }

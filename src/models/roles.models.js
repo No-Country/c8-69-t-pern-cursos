@@ -12,6 +12,9 @@ const Roles = db.define('roles', {
         type: DataTypes.STRING, //varchar 
         allowNull: false
     }
+}, {
+    //? Evita que sequelize agregue las columnas de createdAt y updatedAt
+    timestamps : false
 })
 
 

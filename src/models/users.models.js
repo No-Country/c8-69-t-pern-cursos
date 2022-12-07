@@ -55,6 +55,9 @@ const Users = db.define("users", {
     allowNull: false,
     defaultValue: 'active'
   }
-});
+}, {
+  //? Evita que sequelize agregue las columnas de createdAt y updatedAt
+  timestamps : false
+})
 
 module.exports = Users

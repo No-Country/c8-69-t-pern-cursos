@@ -13,7 +13,6 @@ const coursesServices = require('./courses.services')
 router.route('/')
     .get(coursesServices.getAllCourses)
     .post(
-//        passport.authenticate('jwt', {session: false}),
         coursesServices.createCourse
     )
 

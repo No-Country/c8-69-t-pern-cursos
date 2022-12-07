@@ -34,9 +34,8 @@ const getCourseById = (req, res) => {
 
 
 const createCourse = (req, res) => {
-    //const userId = req.user.id 
     const { title, description, userId, categoryId } = req.body
-    if(title && description  && categoryId ){
+    if(title && description && userId  && categoryId ){
         coursesControllers.createCourse({title, description, userId, categoryId})
             .then(data => {
                 res.status(201).json(data)
@@ -52,6 +51,7 @@ const createCourse = (req, res) => {
             fields: {
                 title: "Principios de ",
                 description: "Aprende ...",
+                userId: "uuid",
                 categoryId: "int"
             }
         })
