@@ -13,14 +13,15 @@ const About = () => {
     <>
      
       <div className="container-about contenedor-about">
+       
         <article className="cont-about">
           <div className="cont-fotoportada">
             <img className="fotoportada" src={imagen1} alt="" />
           </div>
           <div className="text-about texto-about">
-            <p className="text-about-item texto-about-item"><h1><b>Nuestra base de Éxito! Los Jovenes con sueños y ganas de mejorar su calidad de vida</b></h1></p>
+            <p className="text-about-item texto-about-item"><h1><b>Nuestra base de Éxito! jovenes con sueños y ganas de mejorar su calidad de vida</b></h1></p>
           </div>
-          <Link to="/"><button className="btn-about boton-about">Ver Cursos</button></Link>
+         
         </article>
        
 
@@ -33,39 +34,6 @@ const About = () => {
           <Link to="/contact"><button className="boton-plantel2 boton-plantel2">Inscribite</button></Link>
         </div>
 
-
-        {db.map((course) => (
-
-          <>
-
-            <div
-              className="card mb-1 mt-2 card-teacher targeta-teacher contenido-tarjeta-teacher" key={course.id}>
-
-
-                  <div className="row g-0 contain-card-teacher">
-                    <div className="col-md-4 col-6 img-teacher-contain contenido-imagen-teacher">
-                      <img
-                        src={course.teacher.image_teacher}
-                        className="img-fluid rounded-start imgCard img-teacher imagen-teacher"
-                        alt="..."
-                      />
-                    </div>
-
-                    <div className="col-md-8 card-teacher-text tajeta-teacher-texto">
-                      <div className="card-body tajeta-body">
-                        <h5 className="card-title">{course.teacher.name}</h5>
-                        <p className="card-text">{course.title}</p>
-                        <p className="card-text">
-                          <small className="text-muted">Level: {course.level[0]}</small>
-                        </p>
-                        <p className="text-warning ">Calification: ★★★★★ </p>
-                      </div>
-                    </div>
-                  </div>
-
-            </div>
-          </>
-        ))}
       </div>
     </>
   );

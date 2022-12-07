@@ -1,237 +1,221 @@
-.contenedor-about{
-    width: 100%;
-    height: auto;
-    display: flex;
+.contenedor-about {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-bottom: 50px;
+}
+
+.cont-about {
+  width: 90%;
+  height: auto;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cont-fotoportada {
+  width: 90%;
+  height: auto;
+  margin: 10px;
+  padding: 10px;
+}
+.texto-about {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.fotoportada {
+  width: 100%;
+}
+.texto-about-item {
+  font-size: 30px;
+  color: black;
+}
+
+.boton-about {
+  text-decoration: none;
+  width: 150px;
+  height: 50px;
+  color: rgba(255, 255, 255, 0.885);
+  background-color: rgb(0, 153, 255);
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 0 rgb(0, 0, 0);
+  transition: ease-out 0.4s;
+  font-size: 1.5rem;
+  outline: none;
+  border: none;
+  margin-bottom: 10px;
+}
+.boton-about:hover {
+  box-shadow: inset 150px 0 0 0 black;
+  color: white;
+}
+
+.titulo-plantel {
+  width: 90%;
+  height: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 0.3em;
+  background-color: rgb(3, 50, 80);
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.boton-plantel {
+  text-decoration: none;
+  width: 150px;
+  height: 50px;
+  color: rgba(255, 255, 255, 0.885);
+  background-color: rgb(0, 153, 255);
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 0 black;
+  transition: ease-out 0.4s;
+  font-size: 1.5rem;
+  outline: none;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.boton-plantel:hover {
+  box-shadow: inset 150px 0 0 0 black;
+  color: white;
+}
+
+.boton-plantel2 {
+  text-decoration: none;
+  width: 150px;
+  height: 50px;
+  color: rgba(255, 255, 255, 0.885);
+  background-color: rgb(0, 153, 255);
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 0 black;
+  transition: ease-out 0.4s;
+  font-size: 1.5rem;
+  outline: none;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.boton-plantel2:hover {
+  box-shadow: inset 150px 0 0 0 black;
+  color: white;
+}
+
+.tarjeta-teacher {
+  width: 90%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenido-tarjeta-teacher {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 10px;
+}
+.contenido-imagen-teacher {
+  width: 100%;
+  background-color: azure;
+}
+.imagen-teacher {
+  width: 100%;
+}
+
+.tajeta-teacher-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+.tajeta-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1em;
+}
+
+@media (min-width: 900px) {
+  .cont-about {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 900px) {
+  .titulo-plantel {
+    flex-direction: row;
+   
+    gap: 5em;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 900px) {
+  .tarjeta-teacher {
+    flex-direction: row;
+    width: 300px;
+    height: 500px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 900px) {
+  .contain-card-teacher {
+    flex-direction: row;
+    width: 300px;
+    height: 350px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 900px) {
+  .tajeta-teacher-texto {
+    flex-direction: row;
+    height: 200px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 900px) {
+  .tarjeta-body {
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    height: 200px;
     flex-wrap: wrap;
-    gap:1rem;
-    padding-bottom: 50px;
-}
-
-.cont-about{
-   width: 90%;
-   height: 500px;
-   margin-top: 100px;
-   padding: 10px;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-    align-items: center;
-   flex-wrap: wrap;
-   gap: 2rem;
-   background-color: #0f1c3e19;
-}
-
-
-.cont-fotoportada{
-    width: 90%;
-    height: auto;
-    margin: 20px;
-    padding: 10px;
-   
-}
-.texto-about{
-    width: 100%;
-    height: auto;
-    
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
-
-.fotoportada{
-    width: 100%;
-}
-.texto-about-item{
-    font-size: 30px;
-    color: black
-}
-
-.boton-about{
-    text-decoration: none;
-    width: 150px;
-    height: 50px;
-    color: rgba(255, 255, 255, 0.885);
-    background-color: rgb(0, 153, 255);
-    border-radius: 4px;
-    box-shadow: inset 0 0 0 0 rgb(0, 0, 0);
-    transition: ease-out .4s;
-    font-size: 1.5rem;
-    outline: none;
-    border: none;
-    margin-bottom: 10px;
-}
-.boton-about:hover{
-    box-shadow: inset 150px 0 0 0 black;;
-    color: white;
-   
-}
-
-
-
-
-
-.titulo-plantel{
-    width: 90%;
-    height: auto;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap:wrap;
-    gap: 0.3em;
-    background-color: black;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-
-.boton-plantel{
-
-    text-decoration: none;
-    width: 150px;
-    height: 50px;
-    color: rgba(255, 255, 255, 0.885);
-    background-color: rgb(0, 153, 255);
-    border-radius: 4px;
-    box-shadow: inset 0 0 0 0 black;
-    transition: ease-out .4s;
-    font-size: 1.5rem;
-    outline: none;
-    border: none;
-    margin-bottom: 10px;
-}
-
-.boton-plantel:hover{
-    box-shadow: inset 150px 0 0 0 black;;
-    color: white;
-   
-}
-
-.boton-plantel2{
-
-    text-decoration: none;
-    width: 150px;
-    height: 50px;
-    color: rgba(255, 255, 255, 0.885);
-    background-color: rgb(0, 153, 255);
-    border-radius: 4px;
-    box-shadow: inset 0 0 0 0 black;
-    transition: ease-out .4s;
-    font-size: 1.5rem;
-    outline: none;
-    border: none;
-    margin-bottom: 10px;
-    
-}
-
-.boton-plantel2:hover{
-    box-shadow: inset 150px 0 0 0 black;;
-    color: white;
-}
-
-.tarjeta-teacher{
-    width: 90%;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}  
-
-.contenido-tarjeta-teacher{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 10px;
-}
-.contenido-imagen-teacher{
-    width: 100%;
-    background-color: azure;
-}
-.imagen-teacher{
-    width: 100%;
-}
-
-.tajeta-teacher-texto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    background-color: black;
-    color: white;
-    padding-bottom: 20px;
-    padding-top: 10px;
-}
-
-.tajeta-body{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 1em;
-}
-
-
-@media (min-width:900px){
-    .cont-about{
-       flex-direction: row;
-       flex-wrap: nowrap;
-        }
-    }
-
-@media (min-width:900px){
-    .titulo-plantel{
-        flex-direction: row;
-        justify-content: space-evenly;
-        gap: 5em;
-        flex-wrap: wrap;
-         }
-     }
-
-@media (min-width:900px){
-
-        .tarjeta-teacher{
-          flex-direction: row;
-          width: 300px;
-          height: 500px;
-          flex-wrap: wrap;
-          justify-content: flex-start;
-           }
-}
-
-@media (min-width:900px){
-
-    .contain-card-teacher{
-      flex-direction: row;
-      width: 300px;
-      height: 350px;
-      justify-content: flex-start;
-      flex-wrap: wrap;
-      
-       }
-}
-
-@media (min-width:900px){
-          .tajeta-teacher-texto{
-            flex-direction: row;
-           height: 200px;
-            flex-wrap: wrap;
-             }
   }
-
-  @media (min-width:900px){
-    .tarjeta-body{
-      flex-direction: row;
-    justify-content: center;
-     height: 200px;
-      flex-wrap: wrap;
-       }
 }
