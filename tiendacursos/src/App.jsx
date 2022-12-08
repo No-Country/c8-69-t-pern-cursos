@@ -45,7 +45,7 @@ function App() {
           <Route path='/contact' element={<Contact />} />
           <Route path='/courses' element={<Courses />} />
           <Route path='/course/:id' element={<CourseDetail />} />
-          <Route path='/RegistrarUsuario' element={<RegistarUsuario />} />
+          <Route path='/RegistrarUsuario' element={<RegistarUsuario setShow={setShow} show={show} />} />
           <Route path='*' element={<Error404 />} />
 
 

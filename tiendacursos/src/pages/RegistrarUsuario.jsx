@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./styles/registrarUsuario.css";
 //import "react-date-picker/dist/react-datepicker.css"
 import { Link } from "react-router-dom";
 import { useFormik } from "formik";
 
-const RegistrarUsuario = () => {
+const RegistrarUsuario = ({ setShow, show }) => {
+
+  useEffect(() => {
+    if (show === false || show === undefined) {
+      setShow(true)
+    }
+  }, [])
+
   const formik = useFormik({
     initialValues: {
       nombre: "",
