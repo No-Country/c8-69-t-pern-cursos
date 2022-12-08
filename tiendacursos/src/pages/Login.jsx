@@ -97,7 +97,9 @@ const Login = ({ setShow, show }) => {
               <div className="row h-100 align-items-center justify-content-center">
                 <div className="col-auto">
                   <button className="btn btn-outline-primary">
-                    Crear Cuenta
+                    <Link to='/RegistrarUsuario'>
+                      Crear Cuenta
+                    </Link>
                   </button>
                 </div>
               </div>

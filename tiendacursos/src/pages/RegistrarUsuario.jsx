@@ -3,7 +3,6 @@ import "./styles/registrarUsuario.css";
 //import "react-date-picker/dist/react-datepicker.css"
 import { Link } from "react-router-dom";
 import { useFormik } from "formik";
-import * as Yup from "yup";
 
 const RegistrarUsuario = () => {
   const formik = useFormik({
@@ -19,10 +18,6 @@ const RegistrarUsuario = () => {
     onSubmit: (formRegistro) => {
       console.log(formRegistro);
     },
-    validationSchema: Yup.object({
-      telefono: Yup.string().required("Digite su telefono"),
-      fechaNacimiento: Yup.date().required("Digite la fecha de nacimiento"),
-    }),
     validate: (valores) => {
       let errores = {};
 

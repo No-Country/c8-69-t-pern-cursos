@@ -8,7 +8,13 @@ const MyCourseById = ({ setShow, show }) => {
   }, [])
 
   return (
-    <div>MyCourseById</div>
+    <div className='container'>
+      <div className='row'>
+        <div className='col-md-6 offset-md-3 col-sm-12 offset-sm-1 col-xs-12'>
+          <h1>My Courses Details</h1>
+        </div>
+      </div>
+    </div>
   )
 }
 
