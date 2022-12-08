@@ -5,15 +5,15 @@ import db from "../db/db";
 import { useParams } from "react-router-dom";
 
 const CardDetail = () => {
-  const { id } = useParams()
+  const { id } = useParams();
 
   const porcentaje = 30;
   const descuento = (precio) => {
     return precio - (precio * porcentaje) / 100;
   };
-  const course = db[id - 1]
+  const course = db[id - 1];
   return (
-    <div className="container">
+    <div className="container mt-6">
       <div className="card mb-3 mt-4 bg-dark" key={course.id}>
         <div className="row g-0">
           <div className="col-md-4 col-8">
@@ -28,14 +28,10 @@ const CardDetail = () => {
               <h1 className="card-title text-light fs-2 fw-bold">
                 {course.title}
               </h1>
-              <p className="card-text text-muted fs-5">
-                {course.description}
-              </p>
+              <p className="card-text text-muted fs-5">{course.description}</p>
               <p className="text-warning ">★★★★★ </p>
               <p className="card-text">
-                <small className="text-muted">
-                  Last updated 3 mins ago
-                </small>
+                <small className="text-muted">Last updated 3 mins ago</small>
               </p>
               <p className="text-light">
                 Creado por <span>{course.teacher.name}</span>
@@ -84,19 +80,15 @@ const CardDetail = () => {
               {course.price}US$
             </span>
           </h1>
-          <p className="fs-6 mx-2 text-danger">
-            {porcentaje}% de descuento{" "}
-          </p>
-          <button className="btn btn-success mx-2 mt-2">
-            Comprar ahora
-          </button>
+          <p className="fs-6 mx-2 text-danger">{porcentaje}% de descuento </p>
+          <button className="btn btn-success mx-2 mt-2">Comprar ahora</button>
           <p className="textoGarantia mx-2 mt-2">
             Garantía de reembolso de 30 días
           </p>
           <p className="textoGarantia mx-2">Acceso de por vida</p>
         </div>
 
-        <div className=" border mx-6 col-md-6 col-5">
+        <div className=" border mx-6 col-md-6 col-5 m-6">
           <div className="player-wrapper">
             <ReactPlayer
               className="react-player"
@@ -107,7 +99,7 @@ const CardDetail = () => {
           </div>
         </div>
       </div>
-    </div >
+    </div>
   );
 };
 
