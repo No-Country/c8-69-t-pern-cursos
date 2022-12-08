@@ -12,10 +12,9 @@ const Header2 = () => {
               Una carrera hacia el futuro en el presente
             </h1>
             <p className="hero-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-              iure eaque aliquam excepturi voluptas distinctio ab dolorum
-              cupiditate quisquam modi eos blanditiis ipsa, eligendi neque a et
-              laborum sed! Dicta?
+              Conocé nuestra oferta de cursos de presenciales y capacitación
+              online. Cursos con salida laboral y garantia de aprendizaje.
+              Preparate para el futuro, empieza hoy mismo!
             </p>
           </div>
         </div>

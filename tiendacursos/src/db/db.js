@@ -53,7 +53,7 @@ const cursosDB = [{
 }, {
   id: 3,
   title: 'JavaScript Basico',
-  description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tempore provident, expedita assumenda deleniti illum et porro minus architecto! Explicabo ipsam quibusdam perspiciatis voluptas. Possimus ea consequatur amet maxime voluptatum.',
+  description: 'Iníciate en el mundo de la programación, con el lenguaje más versátil y demandado del mercado. Prepárate para dominar el desarrollo de aplicaciones web y Mobile.',
   level: ['trainner', 'medium', 'Andanced'],
   price: 14820.00,
   teacher: {
@@ -79,7 +79,7 @@ const cursosDB = [{
 }, {
   id: 4,
   title: 'Curso Basico Microsorft .NET',
-  description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tempore provident, expedita assumenda deleniti illum et porro minus architecto! Explicabo ipsam quibusdam perspiciatis voluptas. Possimus ea consequatur amet maxime voluptatum.',
+  description: 'Aprende a programar desde cero con uno de los lenguajes más utilizados en el mercado IT. Desarrolla aplicaciones en .NET Framework, .NET Core y preparate para posicionarte en el mercado laboral.',
   level: ['trainner', 'medium', 'Andanced'],
   price: 14852.00,
   teacher: {
@@ -105,7 +105,7 @@ const cursosDB = [{
 }, {
   id: 5,
   title: 'Curso Profecional Node JS',
-  description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tempore provident, expedita assumenda deleniti illum et porro minus architecto! Explicabo ipsam quibusdam perspiciatis voluptas. Possimus ea consequatur amet maxime voluptatum.',
+  description: 'En este curso aprenderás a crear aplicaciones del lado del servidor, empezaremos conociendo un poco acerca de Node.js y su funcionamiento, luego utilizaremos el framework Express que nos facilitará la creación de APIs, veremos cómo realizar conexiones con bases de datos relacionales y no relacionales.',
   level: ['trainner', 'medium', 'Andanced'],
   price: 14362.00,
   teacher: {
@@ -131,7 +131,7 @@ const cursosDB = [{
 }, {
   id: 6,
   title: 'PHP para Backend',
-  description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tempore provident, expedita assumenda deleniti illum et porro minus architecto! Explicabo ipsam quibusdam perspiciatis voluptas. Possimus ea consequatur amet maxime voluptatum.',
+  description: 'Facebook, Wikipedia y Flickr tienen algo en común: todos han sido desarrollados en php. Aprende el lenguaje más versátil y flexible de programación y desarrolla desde cero tus proyectos web de contenido. Y recuerda, si tienes algo que decir, ¡dilo en PHP!.',
   level: ['trainner', 'medium', 'Andanced'],
   price: 10362.00,
   teacher: {
@@ -157,7 +157,7 @@ const cursosDB = [{
 }, {
   id: 7,
   title: 'Curso Basico Python',
-  description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tempore provident, expedita assumenda deleniti illum et porro minus architecto! Explicabo ipsam quibusdam perspiciatis voluptas. Possimus ea consequatur amet maxime voluptatum.',
+  description: 'Aprende Python desde cero. Eleva tus oportunidades con este lenguaje en gran crecimiento para áreas como data science, desarrollo backend, inteligencia artificial, IoT y más. Crea tus primeros programas utilizando variables, estructuras de datos, condicionales y ciclos.',
   level: ['trainner', 'medium', 'Andanced'],
   price: 15200.00,
   teacher: {
@@ -183,7 +183,7 @@ const cursosDB = [{
 }, {
   id: 8,
   title: 'Desarrollo de aplicaciones nativas para Android',
-  description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tempore provident, expedita assumenda deleniti illum et porro minus architecto! Explicabo ipsam quibusdam perspiciatis voluptas. Possimus ea consequatur amet maxime voluptatum.',
+  description: 'Aprende todas las bases de desarrollo Android aún sin saber programar, entiende cómo funciona el sistema operativo, toma decisiones para tu equipo móvil o tus propios desarrollos. Adquiere todo el conocimiento técnico que necesitas para desarrollar aplicaciones móviles Android.',
   level: ['trainner', 'medium', 'Andanced'],
   price: 14200.00,
   teacher: {
@@ -209,7 +209,7 @@ const cursosDB = [{
 }, {
   id: 9,
   title: 'Curso Blockchain y Criptomonedas',
-  description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tempore provident, expedita assumenda deleniti illum et porro minus architecto! Explicabo ipsam quibusdam perspiciatis voluptas. Possimus ea consequatur amet maxime voluptatum.',
+  description: 'Da tus primeros pasos desplegando contratos inteligentes en blockchain a través solidity, el lenguaje de programación de alto nivel más importante en Ethereum.',
   level: ['trainner', 'medium', 'Andanced'],
   price: 13200.00,
   teacher: {
@@ -235,7 +235,7 @@ const cursosDB = [{
 }, {
   id: 10,
   title: 'Curso Boostrap 4',
-  description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tempore provident, expedita assumenda deleniti illum et porro minus architecto! Explicabo ipsam quibusdam perspiciatis voluptas. Possimus ea consequatur amet maxime voluptatum.',
+  description: 'Crea sitios web compatibles entre navegadores de forma fácil y práctica con Bootstrap, un framework frontend que te permite definir estructuras y agregar estilos, comportamientos, modals, tooltips y animaciones. Conoce cómo y en qué casos usarlo en este Curso de Bootstrap.',
   level: ['trainner', 'medium', 'Andanced'],
   price: 17200.00,
   teacher: {
@@ -261,7 +261,7 @@ const cursosDB = [{
 }, {
   id: 11,
   title: 'Curso Data Science',
-  description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tempore provident, expedita assumenda deleniti illum et porro minus architecto! Explicabo ipsam quibusdam perspiciatis voluptas. Possimus ea consequatur amet maxime voluptatum.',
+  description: 'Domina los fundamentos para el manejo y la manipulación de datos. Conoce el mundo de las bases de datos para entender cómo trabajar con ellas.',
   level: ['trainner', 'medium', 'Andanced'],
   price: 14500.00,
   teacher: {
@@ -287,7 +287,7 @@ const cursosDB = [{
 }, {
   id: 12,
   title: 'Curso basico de Exel',
-  description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tempore provident, expedita assumenda deleniti illum et porro minus architecto! Explicabo ipsam quibusdam perspiciatis voluptas. Possimus ea consequatur amet maxime voluptatum.',
+  description: 'Conoce el funcionamento básico de Excel y la utilidad que tiene. Aprende sobre los elementos principales de Excel y cómo dar formato a un documento de hojas de cálculo.',
   level: ['trainner', 'medium', 'Andanced'],
   price: 11000.00,
   teacher: {
@@ -313,7 +313,7 @@ const cursosDB = [{
 }, {
   id: 13,
   title: 'Java desde cero',
-  description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tempore provident, expedita assumenda deleniti illum et porro minus architecto! Explicabo ipsam quibusdam perspiciatis voluptas. Possimus ea consequatur amet maxime voluptatum.',
+  description: 'Comienza tu camino para especializarte como backend developer en Java utilizando Spring Boot, este framework basado en Spring para construir aplicaciones stand-alone y production-grade que son muy sencillas de correr.',
   level: ['trainner', 'medium', 'Andanced'],
   price: 9000.00,
   teacher: {
@@ -339,7 +339,7 @@ const cursosDB = [{
 }, {
   id: 14,
   title: 'Curso Scrum desde cero',
-  description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tempore provident, expedita assumenda deleniti illum et porro minus architecto! Explicabo ipsam quibusdam perspiciatis voluptas. Possimus ea consequatur amet maxime voluptatum.',
+  description: 'Ten éxito en tus proyectos aplicando el marco de trabajo ágil más exitoso. Domina la metodología Scrum y utilízala para generar valor a tus clientes a través de entregas iterativas que te permitan hacer mejoras sobre la marcha y aprender en el proceso.',
   level: ['trainner', 'medium', 'Andanced'],
   price: 8900.00,
   teacher: {
@@ -365,7 +365,7 @@ const cursosDB = [{
 }, {
   id: 15,
   title: 'Curso software tester - QA',
-  description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tempore provident, expedita assumenda deleniti illum et porro minus architecto! Explicabo ipsam quibusdam perspiciatis voluptas. Possimus ea consequatur amet maxime voluptatum.',
+  description: 'Desarrolla tests para asegurar la calidad de tu software. Domina la automatización de pruebas con herramientas como Cypress y Puppeteer.',
   level: ['trainner', 'medium', 'Andanced'],
   price: 7800.00,
   teacher: {
@@ -391,7 +391,7 @@ const cursosDB = [{
 }, {
   id: 16,
   title: 'UX para principiantes',
-  description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tempore provident, expedita assumenda deleniti illum et porro minus architecto!',
+  description: 'Diseña interfaces atractivas e intuitivas con Sketch aplicando los principios de usabilidad y procesos de UX. Aprende técnicas de investigación que te permiten conocer a tus usuarios, aplica Guerilla testing para validar tus diseños y construye un Design System empleando Atomic Design. Entrega al equipo de desarrollo tu diseño de interfaz usando Zeplin.',
   level: ['trainner', 'medium', 'Andanced'],
   price: 12400.00,
   teacher: {
@@ -417,7 +417,7 @@ const cursosDB = [{
 }, {
   id: 17,
   title: 'Curso  C++  profecional',
-  description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tempore provident, expedita assumenda deleniti illum et porro minus architecto!',
+  description: 'Conoce uno de los lenguajes de programación más versátiles y maduros de la industria. Ya sean videojuegos, backend o hardware C++ está presente. Aprende a cómo instalar tu entorno de desarrollo, desarrollar la estructura básica de un programa y codifica tus primeras líneas para después ser compiladas directamente desde la terminal.',
   level: ['trainner', 'medium', 'Andanced'],
   price: 17800.00,
   teacher: {
@@ -443,7 +443,7 @@ const cursosDB = [{
 }, {
   id: 18,
   title: 'Curso Cobol',
-  description: 'Explicabo ipsam quibusdam perspiciatis voluptas. Possimus ea consequatur amet maxime voluptatum.',
+  description: 'Aprende COBOL y asegura un trabajo en la industria de la tecnología. COBOL es un lenguaje de programación orientado a negocios y su uso en industrias como la de los bancos sigue siendo muy demandado.',
   level: ['trainner', 'medium', 'Andanced'],
   price: 9600.00,
   teacher: {
@@ -469,7 +469,7 @@ const cursosDB = [{
 }, {
   id: 19,
   title: 'ReactJS Bases',
-  description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tempore provident, expedita assumenda deleniti illum et porro minus architecto!',
+  description: '¡Aprende React.js, la librería más popular de JavaScript para crear aplicaciones web interactivas! Trabaja con componentes, propiedades, estado y efectos. Almacena tu información en Local Storage, implementa React Context para comunicar componentes y teletransporta componentes con React Portals. Crea tu primer proyecto web con React.',
   level: ['trainner', 'medium', 'Andanced'],
   price: 1100.00,
   teacher: {
@@ -495,7 +495,7 @@ const cursosDB = [{
 }, {
   id: 20,
   title: 'Ruby desde cero',
-  description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tempore provident, expedita assumenda deleniti illum et porro minus architecto! Explicabo ipsam quibusdam perspiciatis voluptas. Possimus ea consequatur amet maxime voluptatum.',
+  description: 'Aprende lo esencial de Ruby, el lenguaje ideal para empezar a programar que muchas startups usan como base de sus plataformas. Conoce el entorno de desarrollo y las bases del lenguaje. Domina la programación orientada a objetos y empieza a abrir puertas en el mundo profesional.',
   level: ['trainner', 'medium', 'Andanced'],
   price: 1554.00,
   teacher: {
